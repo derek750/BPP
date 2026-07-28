@@ -1,0 +1,40 @@
+{
+  "model": "dwulff/mpnet-personality",
+  "window_words": 200,
+  "n_human_windows": 800,
+  "n_generations": 5760,
+  "embedding_dim": 768,
+  "ridge_alpha": 1.0,
+  "human_heldout_O": {
+    "rho": 0.11384031515330599,
+    "pearson_r": 0.12612011346142654,
+    "slope": 0.050666388698278934,
+    "intercept": 42.20375082774485,
+    "mae": 27.141049466814312
+  },
+  "human_heldout_N": {
+    "rho": 0.04964239254269672,
+    "pearson_r": 0.04796720929639135,
+    "slope": 0.01683462715564797,
+    "intercept": 48.352753483952526,
+    "mae": 30.093826448349727
+  },
+  "n_train_windows": 590,
+  "n_test_windows": 210,
+  "n_train_authors": 461,
+  "n_test_authors": 154,
+  "models": [
+    "deepseek-v3",
+    "gpt-4o-mini",
+    "qwen3-32b"
+  ],
+  "outputs": {
+    "per_sample": "/Users/derek/Developer/Controled Generation/optimized/results/full/embedding/embedding_per_sample.csv",
+    "essay_summary": "/Users/derek/Developer/Controled Generation/optimized/results/full/embedding/embedding_condition_summary.csv",
+    "author_level": "/Users/derek/Developer/Controled Generation/optimized/results/full/embedding/embedding_author_level.csv",
+    "author_summary": "/Users/derek/Developer/Controled Generation/optimized/results/full/embedding/embedding_author_summary.csv",
+    "by_model_summary": "/Users/derek/Developer/Controled Generation/optimized/results/full/embedding/embedding_condition_model_summary.csv",
+    "embeddings": "/Users/derek/Developer/Controled Generation/optimized/results/full/embedding/personality_embeddings.npz",
+    "human_windows": "/Users/derek/Developer/Controled Generation/optimized/results/full/embedding/human_windows.csv"
+  }
+}

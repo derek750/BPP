@@ -1,0 +1,5 @@
+steering_condition,n,mean_standardized_mae,mean_category_rho,mean_category_slope,pooled_z_rho,self_identification_rate,mean_ttr
+persona_only,24,1.7579,-0.1197,-0.5244,-0.1155,0.0417,0.6828
+liwc_only,24,3.3845,0.3765,2.3917,0.3855,0.0,0.6791
+persona_liwc,24,3.3319,0.4146,2.7148,0.4158,0.0,0.681
+lex_fewshot,24,3.1081,0.5508,3.2833,0.5311,0.0833,0.6838

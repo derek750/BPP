@@ -1,0 +1,36 @@
+{
+  "n_author_rows": 48,
+  "primary_metric": "author_level_concat_reliwc",
+  "author_level": "/Users/derek/Developer/Controled Generation/optimized/results/pilot/step5_pilot/pilot_author_level_liwc.csv",
+  "author_summary": "/Users/derek/Developer/Controled Generation/optimized/results/pilot/step5_pilot/pilot_author_condition_summary.csv",
+  "summary": [
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 12,
+      "mean_standardized_mae": 2.9377,
+      "mean_category_rho": 0.5727,
+      "mean_category_slope": 3.2718
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 12,
+      "mean_standardized_mae": 3.1262,
+      "mean_category_rho": 0.4932,
+      "mean_category_slope": 2.4209
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 12,
+      "mean_standardized_mae": 3.1408,
+      "mean_category_rho": 0.5458,
+      "mean_category_slope": 2.7204
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 12,
+      "mean_standardized_mae": 1.5052,
+      "mean_category_rho": -0.1992,
+      "mean_category_slope": -0.531
+    }
+  ]
+}

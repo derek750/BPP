@@ -1,0 +1,324 @@
+{
+  "n_planned": 1920,
+  "n_rows": 5760,
+  "n_scored_this_run": 0,
+  "score_error": "LIWC returned fewer usable rows than input texts.",
+  "models": [
+    "deepseek-v3"
+  ],
+  "conditions": [
+    "lex_fewshot",
+    "liwc_only",
+    "persona_liwc",
+    "persona_only"
+  ],
+  "categories": [
+    "emo_sad",
+    "focusfuture",
+    "mental",
+    "certitude",
+    "fatigue",
+    "Affect",
+    "adverb",
+    "swear"
+  ],
+  "primary_liwc_metric": "author_level_concat_reliwc",
+  "essay_level_summary": [
+    {
+      "steering_condition": "persona_only",
+      "model_key": "ALL",
+      "n": 140,
+      "mean_standardized_mae": 1.6266,
+      "mean_category_rho": -0.0171,
+      "mean_category_slope": -0.0754,
+      "self_identification_rate": 0.05,
+      "mean_ttr": 0.646
+    },
+    {
+      "steering_condition": "persona_only",
+      "model_key": "deepseek-v3",
+      "n": 48,
+      "mean_standardized_mae": 1.7716,
+      "mean_category_rho": -0.0302,
+      "mean_category_slope": -0.1389,
+      "self_identification_rate": 0.0,
+      "mean_ttr": 0.658
+    },
+    {
+      "steering_condition": "persona_only",
+      "model_key": "gpt-4o-mini",
+      "n": 44,
+      "mean_standardized_mae": 1.3439,
+      "mean_category_rho": 0.0338,
+      "mean_category_slope": 0.1411,
+      "self_identification_rate": 0.0455,
+      "mean_ttr": 0.6399
+    },
+    {
+      "steering_condition": "persona_only",
+      "model_key": "qwen3-32b",
+      "n": 48,
+      "mean_standardized_mae": 1.7406,
+      "mean_category_rho": -0.0509,
+      "mean_category_slope": -0.2248,
+      "self_identification_rate": 0.1042,
+      "mean_ttr": 0.6396
+    },
+    {
+      "steering_condition": "liwc_only",
+      "model_key": "ALL",
+      "n": 120,
+      "mean_standardized_mae": 2.6313,
+      "mean_category_rho": 0.3706,
+      "mean_category_slope": 2.3959,
+      "self_identification_rate": 0.025,
+      "mean_ttr": 0.6611
+    },
+    {
+      "steering_condition": "liwc_only",
+      "model_key": "deepseek-v3",
+      "n": 29,
+      "mean_standardized_mae": 3.0896,
+      "mean_category_rho": 0.4865,
+      "mean_category_slope": 3.5808,
+      "self_identification_rate": 0.0,
+      "mean_ttr": 0.6523
+    },
+    {
+      "steering_condition": "liwc_only",
+      "model_key": "gpt-4o-mini",
+      "n": 44,
+      "mean_standardized_mae": 2.3374,
+      "mean_category_rho": 0.3134,
+      "mean_category_slope": 1.7696,
+      "self_identification_rate": 0.0227,
+      "mean_ttr": 0.652
+    },
+    {
+      "steering_condition": "liwc_only",
+      "model_key": "qwen3-32b",
+      "n": 47,
+      "mean_standardized_mae": 2.6236,
+      "mean_category_rho": 0.3679,
+      "mean_category_slope": 2.1903,
+      "self_identification_rate": 0.0426,
+      "mean_ttr": 0.675
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "model_key": "ALL",
+      "n": 125,
+      "mean_standardized_mae": 2.4143,
+      "mean_category_rho": 0.2974,
+      "mean_category_slope": 2.0307,
+      "self_identification_rate": 0.04,
+      "mean_ttr": 0.6426
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "model_key": "deepseek-v3",
+      "n": 33,
+      "mean_standardized_mae": 3.1491,
+      "mean_category_rho": 0.536,
+      "mean_category_slope": 2.6929,
+      "self_identification_rate": 0.0606,
+      "mean_ttr": 0.6504
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "model_key": "gpt-4o-mini",
+      "n": 44,
+      "mean_standardized_mae": 1.9187,
+      "mean_category_rho": 0.2871,
+      "mean_category_slope": 1.1056,
+      "self_identification_rate": 0.0455,
+      "mean_ttr": 0.6466
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "model_key": "qwen3-32b",
+      "n": 48,
+      "mean_standardized_mae": 2.3634,
+      "mean_category_rho": 0.2657,
+      "mean_category_slope": 2.3577,
+      "self_identification_rate": 0.0208,
+      "mean_ttr": 0.6336
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "model_key": "ALL",
+      "n": 135,
+      "mean_standardized_mae": 3.0009,
+      "mean_category_rho": 0.3366,
+      "mean_category_slope": 2.7454,
+      "self_identification_rate": 0.0741,
+      "mean_ttr": 0.6584
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "model_key": "deepseek-v3",
+      "n": 45,
+      "mean_standardized_mae": 3.6508,
+      "mean_category_rho": 0.4427,
+      "mean_category_slope": 4.2212,
+      "self_identification_rate": 0.0222,
+      "mean_ttr": 0.663
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "model_key": "gpt-4o-mini",
+      "n": 43,
+      "mean_standardized_mae": 2.2588,
+      "mean_category_rho": 0.2881,
+      "mean_category_slope": 1.288,
+      "self_identification_rate": 0.0465,
+      "mean_ttr": 0.6497
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "model_key": "qwen3-32b",
+      "n": 47,
+      "mean_standardized_mae": 3.0578,
+      "mean_category_rho": 0.3136,
+      "mean_category_slope": 2.6394,
+      "self_identification_rate": 0.1489,
+      "mean_ttr": 0.6621
+    }
+  ],
+  "author_level_summary": [
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.9587,
+      "mean_category_rho": 0.5937,
+      "mean_category_slope": 2.2372,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.7181,
+      "mean_category_rho": 0.5357,
+      "mean_category_slope": 1.0884,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.3573,
+      "mean_category_rho": 0.4937,
+      "mean_category_slope": 1.6731,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.7998,
+      "mean_category_rho": 0.6575,
+      "mean_category_slope": 2.2343,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.8037,
+      "mean_category_rho": 0.497,
+      "mean_category_slope": 1.1416,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.9565,
+      "mean_category_rho": 0.4671,
+      "mean_category_slope": 1.4215,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.5878,
+      "mean_category_rho": 0.5726,
+      "mean_category_slope": 1.8502,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.2521,
+      "mean_category_rho": 0.4169,
+      "mean_category_slope": 0.7242,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.9104,
+      "mean_category_rho": 0.4051,
+      "mean_category_slope": 1.3004,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.2841,
+      "mean_category_rho": -0.0524,
+      "mean_category_slope": -0.055,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.0945,
+      "mean_category_rho": 0.0285,
+      "mean_category_slope": 0.021,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.1594,
+      "mean_category_rho": 0.0796,
+      "mean_category_slope": 0.0892,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 240,
+      "mean_standardized_mae": 1.1794,
+      "mean_category_rho": 0.0162,
+      "mean_category_slope": 0.0184,
+      "model_key": "ALL"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 240,
+      "mean_standardized_mae": 2.1866,
+      "mean_category_rho": 0.5102,
+      "mean_category_slope": 1.5992,
+      "model_key": "ALL"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 240,
+      "mean_standardized_mae": 1.9168,
+      "mean_category_rho": 0.424,
+      "mean_category_slope": 1.2916,
+      "model_key": "ALL"
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 240,
+      "mean_standardized_mae": 2.3447,
+      "mean_category_rho": 0.5138,
+      "mean_category_slope": 1.6662,
+      "model_key": "ALL"
+    }
+  ],
+  "outputs": {
+    "generations": "/Users/derek/Developer/Controled Generation/optimized/results/full/generations/full_generations.csv",
+    "essay_level_summary": "/Users/derek/Developer/Controled Generation/optimized/results/full/generations/full_condition_model_summary.csv",
+    "author_level": "/Users/derek/Developer/Controled Generation/optimized/results/full/generations/full_author_level_liwc.csv",
+    "author_summary": "/Users/derek/Developer/Controled Generation/optimized/results/full/generations/full_author_condition_model_summary.csv"
+  }
+}

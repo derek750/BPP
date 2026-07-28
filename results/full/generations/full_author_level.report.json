@@ -1,0 +1,137 @@
+{
+  "n_author_rows": 960,
+  "primary_metric": "author_level_concat_reliwc",
+  "mean_rho_aggregation": "fisher_z",
+  "author_level": "/Users/derek/Developer/Controled Generation/optimized/results/full/generations/full_author_level_liwc.csv",
+  "author_summary": "/Users/derek/Developer/Controled Generation/optimized/results/full/generations/full_author_condition_model_summary.csv",
+  "summary": [
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.9587,
+      "mean_category_rho": 0.6404,
+      "mean_category_slope": 2.2372,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.7181,
+      "mean_category_rho": 0.5897,
+      "mean_category_slope": 1.0884,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.3573,
+      "mean_category_rho": 0.5282,
+      "mean_category_slope": 1.6731,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.7998,
+      "mean_category_rho": 0.707,
+      "mean_category_slope": 2.2343,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.8037,
+      "mean_category_rho": 0.5803,
+      "mean_category_slope": 1.1416,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.9565,
+      "mean_category_rho": 0.5116,
+      "mean_category_slope": 1.4215,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 80,
+      "mean_standardized_mae": 2.5878,
+      "mean_category_rho": 0.6213,
+      "mean_category_slope": 1.8502,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.2521,
+      "mean_category_rho": 0.4667,
+      "mean_category_slope": 0.7242,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.9104,
+      "mean_category_rho": 0.4422,
+      "mean_category_slope": 1.3004,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.2841,
+      "mean_category_rho": -0.0527,
+      "mean_category_slope": -0.055,
+      "model_key": "deepseek-v3"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.0945,
+      "mean_category_rho": 0.0289,
+      "mean_category_slope": 0.021,
+      "model_key": "gpt-4o-mini"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 80,
+      "mean_standardized_mae": 1.1594,
+      "mean_category_rho": 0.0812,
+      "mean_category_slope": 0.0892,
+      "model_key": "qwen3-32b"
+    },
+    {
+      "steering_condition": "persona_only",
+      "n_authors": 240,
+      "mean_standardized_mae": 1.1794,
+      "mean_category_rho": 0.0163,
+      "mean_category_slope": 0.0184,
+      "model_key": "ALL"
+    },
+    {
+      "steering_condition": "liwc_only",
+      "n_authors": 240,
+      "mean_standardized_mae": 2.1866,
+      "mean_category_rho": 0.5557,
+      "mean_category_slope": 1.5992,
+      "model_key": "ALL"
+    },
+    {
+      "steering_condition": "persona_liwc",
+      "n_authors": 240,
+      "mean_standardized_mae": 1.9168,
+      "mean_category_rho": 0.4539,
+      "mean_category_slope": 1.2916,
+      "model_key": "ALL"
+    },
+    {
+      "steering_condition": "lex_fewshot",
+      "n_authors": 240,
+      "mean_standardized_mae": 2.3447,
+      "mean_category_rho": 0.5452,
+      "mean_category_slope": 1.6662,
+      "model_key": "ALL"
+    }
+  ]
+}

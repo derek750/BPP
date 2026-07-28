@@ -1,0 +1,34 @@
+{
+  "step": "Optimized continuous / Step 9 \u2014 profile-clustered bootstrap",
+  "n_boot": 2000,
+  "seed": 7,
+  "n_profiles": 80,
+  "models": [
+    "deepseek-v3",
+    "gpt-4o-mini",
+    "qwen3-32b"
+  ],
+  "conditions": [
+    "persona_only",
+    "liwc_only",
+    "persona_liwc",
+    "lex_fewshot"
+  ],
+  "planned_contrasts": [
+    "liwc_only - persona_only",
+    "persona_liwc - persona_only",
+    "persona_liwc - liwc_only"
+  ],
+  "mean_rho_aggregation": "fisher_z",
+  "outputs": {
+    "point_estimates": "profile_point_estimates.csv",
+    "bootstrap_ci": "profile_bootstrap_ci.csv",
+    "contrasts": "profile_bootstrap_contrasts.csv",
+    "draws_sample": "profile_bootstrap_draws_sample.csv"
+  },
+  "notes": [
+    "Resampling unit is profile_id; all condition\u00d7model rows for a drawn profile are kept.",
+    "LIWC \u03c1 uses Fisher-z mean across the eight control categories.",
+    "BFI metrics use author-level means over scored topics."
+  ]
+}

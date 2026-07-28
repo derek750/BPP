@@ -1,0 +1,17 @@
+steering_condition,n_authors,mean_standardized_mae,mean_category_rho,mean_category_slope,model_key
+lex_fewshot,80,2.9587,0.6404,2.2372,deepseek-v3
+lex_fewshot,80,1.7181,0.5897,1.0884,gpt-4o-mini
+lex_fewshot,80,2.3573,0.5282,1.6731,qwen3-32b
+liwc_only,80,2.7998,0.707,2.2343,deepseek-v3
+liwc_only,80,1.8037,0.5803,1.1416,gpt-4o-mini
+liwc_only,80,1.9565,0.5116,1.4215,qwen3-32b
+persona_liwc,80,2.5878,0.6213,1.8502,deepseek-v3
+persona_liwc,80,1.2521,0.4667,0.7242,gpt-4o-mini
+persona_liwc,80,1.9104,0.4422,1.3004,qwen3-32b
+persona_only,80,1.2841,-0.0527,-0.055,deepseek-v3
+persona_only,80,1.0945,0.0289,0.021,gpt-4o-mini
+persona_only,80,1.1594,0.0812,0.0892,qwen3-32b
+persona_only,240,1.1794,0.0163,0.0184,ALL
+liwc_only,240,2.1866,0.5557,1.5992,ALL
+persona_liwc,240,1.9168,0.4539,1.2916,ALL
+lex_fewshot,240,2.3447,0.5452,1.6662,ALL

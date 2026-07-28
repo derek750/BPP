@@ -1,0 +1,199 @@
+{
+  "step": "Optimized continuous / Step 8 \u2014 BFI-44 validation",
+  "n_subsample": 432,
+  "n_scored": 432,
+  "n_parse_ok": 432,
+  "content": "memorable_journey",
+  "score_scale": "0-100",
+  "score_scale_note": "Trait composites aligned with PANDORA Big Five (0\u2013100). Items answered 1\u20135; mapped via (mean \u2212 1) / 4 \u00d7 100.",
+  "primary_metric": "Spearman \u03c1(target_O/N, bfi_O/N)",
+  "api_models_used": {
+    "deepseek-v3": "deepseek-v4-flash",
+    "gpt-4o-mini": "gpt-4o-mini",
+    "qwen3-32b": "qwen/qwen3-32b"
+  },
+  "tertile_edges": {
+    "O": [
+      19.0,
+      58.0
+    ],
+    "N": [
+      28.3333,
+      71.0
+    ]
+  },
+  "outputs": {
+    "per_sample": "bfi_per_sample.csv",
+    "summary": "bfi_summary.csv"
+  },
+  "summary": [
+    {
+      "model_key": "deepseek-v3",
+      "steering_condition": "lex_fewshot",
+      "n": 36,
+      "mean_bfi_O": 76.7361,
+      "mean_bfi_N": 49.3056,
+      "rho_O_vs_target": 0.327,
+      "p_O": 0.05159215340299469,
+      "rho_N_vs_target": 0.1593,
+      "p_N": 0.3533602810626432,
+      "o_match_rate": 0.2778,
+      "n_match_rate": 0.3889,
+      "cell_match_rate": 0.0556
+    },
+    {
+      "model_key": "deepseek-v3",
+      "steering_condition": "liwc_only",
+      "n": 36,
+      "mean_bfi_O": 63.5417,
+      "mean_bfi_N": 45.5729,
+      "rho_O_vs_target": -0.1621,
+      "p_O": 0.3447469255211842,
+      "rho_N_vs_target": 0.0849,
+      "p_N": 0.6225289742103569,
+      "o_match_rate": 0.3333,
+      "n_match_rate": 0.4722,
+      "cell_match_rate": 0.0833
+    },
+    {
+      "model_key": "deepseek-v3",
+      "steering_condition": "persona_liwc",
+      "n": 36,
+      "mean_bfi_O": 64.7222,
+      "mean_bfi_N": 53.7326,
+      "rho_O_vs_target": 0.8746,
+      "p_O": 3.166876425009861e-12,
+      "rho_N_vs_target": 0.9226,
+      "p_N": 1.273732933350452e-15,
+      "o_match_rate": 0.4722,
+      "n_match_rate": 0.8889,
+      "cell_match_rate": 0.4167
+    },
+    {
+      "model_key": "deepseek-v3",
+      "steering_condition": "persona_only",
+      "n": 36,
+      "mean_bfi_O": 64.2361,
+      "mean_bfi_N": 54.9479,
+      "rho_O_vs_target": 0.8986,
+      "p_O": 1.03303147155703e-13,
+      "rho_N_vs_target": 0.9456,
+      "p_N": 3.7093093358833396e-18,
+      "o_match_rate": 0.3889,
+      "n_match_rate": 0.8889,
+      "cell_match_rate": 0.3056
+    },
+    {
+      "model_key": "gpt-4o-mini",
+      "steering_condition": "lex_fewshot",
+      "n": 36,
+      "mean_bfi_O": 90.7639,
+      "mean_bfi_N": 42.4479,
+      "rho_O_vs_target": 0.3638,
+      "p_O": 0.029184406605087643,
+      "rho_N_vs_target": 0.2206,
+      "p_N": 0.1960084094332039,
+      "o_match_rate": 0.3333,
+      "n_match_rate": 0.5278,
+      "cell_match_rate": 0.1389
+    },
+    {
+      "model_key": "gpt-4o-mini",
+      "steering_condition": "liwc_only",
+      "n": 36,
+      "mean_bfi_O": 90.625,
+      "mean_bfi_N": 45.3125,
+      "rho_O_vs_target": 0.185,
+      "p_O": 0.2801117682795571,
+      "rho_N_vs_target": 0.2271,
+      "p_N": 0.18285393569896344,
+      "o_match_rate": 0.3333,
+      "n_match_rate": 0.3333,
+      "cell_match_rate": 0.1389
+    },
+    {
+      "model_key": "gpt-4o-mini",
+      "steering_condition": "persona_liwc",
+      "n": 36,
+      "mean_bfi_O": 78.4722,
+      "mean_bfi_N": 54.6007,
+      "rho_O_vs_target": 0.7949,
+      "p_O": 7.022882259137001e-09,
+      "rho_N_vs_target": 0.8322,
+      "p_N": 3.1573303188029843e-10,
+      "o_match_rate": 0.3333,
+      "n_match_rate": 0.8056,
+      "cell_match_rate": 0.2778
+    },
+    {
+      "model_key": "gpt-4o-mini",
+      "steering_condition": "persona_only",
+      "n": 36,
+      "mean_bfi_O": 78.6111,
+      "mean_bfi_N": 57.5521,
+      "rho_O_vs_target": 0.8108,
+      "p_O": 2.0435319041537024e-09,
+      "rho_N_vs_target": 0.9229,
+      "p_N": 1.179007309475256e-15,
+      "o_match_rate": 0.3333,
+      "n_match_rate": 0.6667,
+      "cell_match_rate": 0.2222
+    },
+    {
+      "model_key": "qwen3-32b",
+      "steering_condition": "lex_fewshot",
+      "n": 36,
+      "mean_bfi_O": 57.4306,
+      "mean_bfi_N": 34.2882,
+      "rho_O_vs_target": 0.1423,
+      "p_O": 0.40762705850002784,
+      "rho_N_vs_target": 0.0535,
+      "p_N": 0.7566464288111234,
+      "o_match_rate": 0.3889,
+      "n_match_rate": 0.3889,
+      "cell_match_rate": 0.1111
+    },
+    {
+      "model_key": "qwen3-32b",
+      "steering_condition": "liwc_only",
+      "n": 36,
+      "mean_bfi_O": 64.3056,
+      "mean_bfi_N": 28.125,
+      "rho_O_vs_target": -0.0181,
+      "p_O": 0.9164421875305528,
+      "rho_N_vs_target": 0.122,
+      "p_N": 0.4785173002013238,
+      "o_match_rate": 0.25,
+      "n_match_rate": 0.4167,
+      "cell_match_rate": 0.0556
+    },
+    {
+      "model_key": "qwen3-32b",
+      "steering_condition": "persona_liwc",
+      "n": 36,
+      "mean_bfi_O": 67.5,
+      "mean_bfi_N": 50.9549,
+      "rho_O_vs_target": 0.8436,
+      "p_O": 1.0497628762024143e-10,
+      "rho_N_vs_target": 0.857,
+      "p_N": 2.5411509624711366e-11,
+      "o_match_rate": 0.3333,
+      "n_match_rate": 0.8889,
+      "cell_match_rate": 0.2778
+    },
+    {
+      "model_key": "qwen3-32b",
+      "steering_condition": "persona_only",
+      "n": 36,
+      "mean_bfi_O": 68.125,
+      "mean_bfi_N": 51.7361,
+      "rho_O_vs_target": 0.862,
+      "p_O": 1.4440498219704474e-11,
+      "rho_N_vs_target": 0.9319,
+      "p_N": 1.529514378234017e-16,
+      "o_match_rate": 0.3611,
+      "n_match_rate": 0.9444,
+      "cell_match_rate": 0.3333
+    }
+  ]
+}

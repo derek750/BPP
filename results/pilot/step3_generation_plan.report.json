@@ -1,0 +1,23 @@
+{
+  "output": "/Users/derek/Developer/Controled Generation/optimized/results/step3_generation_plan.csv",
+  "n_profiles": 12,
+  "n_plan_rows": 96,
+  "contents": [
+    "weekend",
+    "technology"
+  ],
+  "conditions": [
+    "persona_only",
+    "liwc_only",
+    "persona_liwc",
+    "lex_fewshot"
+  ],
+  "n_reps": 1,
+  "model": "deepseek-chat",
+  "rows_per_condition": {
+    "lex_fewshot": 24,
+    "liwc_only": 24,
+    "persona_liwc": 24,
+    "persona_only": 24
+  }
+}

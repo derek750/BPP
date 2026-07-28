@@ -1,0 +1,17 @@
+steering_condition,model_key,n,mean_standardized_mae,mean_category_rho,mean_category_slope,self_identification_rate,mean_ttr
+persona_only,ALL,140,1.6266,-0.0171,-0.0754,0.05,0.646
+persona_only,deepseek-v3,48,1.7716,-0.0302,-0.1389,0.0,0.658
+persona_only,gpt-4o-mini,44,1.3439,0.0338,0.1411,0.0455,0.6399
+persona_only,qwen3-32b,48,1.7406,-0.0509,-0.2248,0.1042,0.6396
+liwc_only,ALL,120,2.6313,0.3706,2.3959,0.025,0.6611
+liwc_only,deepseek-v3,29,3.0896,0.4865,3.5808,0.0,0.6523
+liwc_only,gpt-4o-mini,44,2.3374,0.3134,1.7696,0.0227,0.652
+liwc_only,qwen3-32b,47,2.6236,0.3679,2.1903,0.0426,0.675
+persona_liwc,ALL,125,2.4143,0.2974,2.0307,0.04,0.6426
+persona_liwc,deepseek-v3,33,3.1491,0.536,2.6929,0.0606,0.6504
+persona_liwc,gpt-4o-mini,44,1.9187,0.2871,1.1056,0.0455,0.6466
+persona_liwc,qwen3-32b,48,2.3634,0.2657,2.3577,0.0208,0.6336
+lex_fewshot,ALL,135,3.0009,0.3366,2.7454,0.0741,0.6584
+lex_fewshot,deepseek-v3,45,3.6508,0.4427,4.2212,0.0222,0.663
+lex_fewshot,gpt-4o-mini,43,2.2588,0.2881,1.288,0.0465,0.6497
+lex_fewshot,qwen3-32b,47,3.0578,0.3136,2.6394,0.1489,0.6621

@@ -1,0 +1,961 @@
+profile_id,target_O,target_N,persona_component,liwc_component,fewshot_component,fewshot_author_ids,fewshot_distances,o_percentile,n_percentile,target_emo_sad,target_focusfuture,target_mental,target_certitude,target_fatigue,target_Affect,target_adverb,target_swear
+syn_0000,50.0,80.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.16% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.88% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.03% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.96% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.04% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.21% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.89% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.17% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""They need to do it like in football, Champions league, and world cup. Where amount of teams from the region based on results from the teams. Every region still gets some amount of teams but proportion is based on their result in previous tournament(s). This system is quite balanced i think. they have some kind of points system that goes to each region i think.""
+
+Example 2: ""It worked!!! OMG AMAZING. Thank you! I don't see most of my extensions here! Maybe they are not as ""must have"" as I thought! Anyway, maybe some of you will find them useful or better yet, suggest something better:1. AutoPager - I was gonna suggest this first but it has apparently vanished from the store. [AutoPatchWork]( seems to be a decent alternative. Automatically loads the next page when you scroll down the current one. Pretty useful if you go to sites that require a lot of scrolling, i.e. reddit, comic/manga sites, search engines, etc.2.""","[290, 1191]","[0.6473, 0.737]",0.6115466856735566,0.7555238774055595,0.16,0.88,0.03,0.96,0.0368114410281066,5.21,6.89,0.17
+syn_0001,17.0,40.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.11% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.27% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.16% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.95% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 3.63% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.04% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.17% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I know the minimum wage in Bremen is going from 6.5 to 8.5 euro an hour. I only know this because I work a minimum wage job. This might just put me above the poverty line. But then again this is Germany, and what is considered poor here is filthy rich for most of the world. I live at the top of Germany and mangos usually run between 1 and 2 euro a piece. I found them once for 50 cents on sale, it was a good day.""
+
+Example 2: ""I like the new skyrail stations. They look sleek, modern and world class. Nothing wrong with steel, glass and wood because it'll always be timeless. That's why NYC and Vancouver are much prettier than Melbourne. Personally I don't like the ""funky"" places with artwork because they tend to become very daggy and dated very quickly. Oh yeah, I wonder how statistically unlikely it was for Leo to win an Oscar's - let alone on a leap day. I think I should buy a lottery ticket tonight, just incase.""","[1122, 45]","[0.8583, 0.9462]",0.31931575196008555,0.43264433357091947,0.11,1.27,0.16,0.95,0.0,3.6252803571082217,7.04,0.17
+syn_0002,17.0,94.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.29% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.65% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.42% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.34% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 7.96% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.29% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.57% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Weed, masturbation, videogames are childish wastes of time. You know what *really* keeps your brain active? Convincing women to have sex with you and then fucking them hard. IS THERE VERSION WITH MORE DIMENSIONS? WILL GIVE SQRT (888 $CHM€CKLES) THAT'S SO AWESOME!!! Last couple of Econ tall episodes were a bit lacking tbh. IOTA is made specifically for the Internet of Things and the huge amount of data sensors generate. Wasn't his stuff always about the effect of the Future Authoring program?I sincerely believe that this isn't just a ""No true Scotsman"".""
+
+Example 2: ""Ho boy, I feel you. Quite recently I was in the same spot and the day before I had pretty much an anxiety attack and ended up canselling the whole thing.The funny thing is, I wasn’t really uncertain about what to say in response to questions or whatever, it was anxiety itself. I was afraid of getting shaky, sweaty and stammering during the interview. As in, I was afraid of being afraid. Realizing this did help a bit.Do you feel the same way or what are you mostly uncertain about?""","[1044, 930]","[1.7963, 1.8497]",0.31931575196008555,0.924447612259444,0.29,1.65,0.42,1.34,0.0,7.963170658597762,7.293675814722067,0.57
+syn_0003,24.0,98.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.38% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.27% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.11% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.10% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.09% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.26% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.10% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.42% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I'm so glad you mentioned this. I actually miss foods higher in fibre. They definitely kept me full longer, and they also tend to have a lot more nutrients (even as simple as brown bread/brown rice versus the white variety). It always comes down to: do I want the nutrients and healthier food, or do I want to not be doubled over in pain/living in the bathroom for days. :( Love your tip on finding new rewards though. I need to do that. Associating positive/relaxed feelings with food I think has been damaging for me!""
+
+Example 2: ""IT TELLS A *STORY*. lol at your downvote. i heard good things about Riverdale! that before/after photo looks distorted - her chin looks sharper too... i'll need more proof!!!! altho i can see it happening but dang... 10 day recovery for the nose is not usual?? Oculus Reparo! You get a photo with her too... it's up to you. Do you have $800 disposable? If so, then do it. If you can cut $10 a week for the next 8 weeks from your savings... you'll have enough. Sometimes by Britney Spears. Gurl... she can't barely sing....""","[535, 14]","[1.1079, 1.1592]",0.39344262295081966,0.9828937990021382,0.38,1.27,0.11,1.1,0.09,6.26,7.1,0.42
+syn_0004,60.0,98.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.14% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.45% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.01% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.06% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.19% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 4.82% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.33% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""You could tell that she wanted to abandon her talking points and just listen at a couple of points, but her stubborn ideology couldn't let her.Edit: I'm a woman that he has most certainly helped. [What do you think?]( I host quite a bit of affection for Sargon, but I'm not fond of seeing his bare ass. Didn't occur to me that this preference would be tested. For anyone who likes Jennifer Tilly, watch the movie [Bound]( It will make you so happy.""
+
+Example 2: ""?? I said he's wrong about NSMB U mods. I explained why 3ds is of no interest to me. I haven't seen any good reason to get the Switch for my needs. The owners feel it adds some prestige, and makes the Yankees different. And it does.Is it stupid that they risk missing out on players due to the strict policy? Maybe. But it hasn't been much of an issue for them.Inb4 first Sikh MLB'er ends up a Yankee and causes a huge scandal. It's sure feeling that way. Still hoping for a miracle run.""","[855, 110]","[1.0066, 1.1554]",0.6856735566642908,0.9828937990021382,0.14,1.45,0.01,1.06,0.07,5.19,4.817377406570462,0.33
+syn_0005,8.0,15.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.20% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.06% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.42% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.04% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.32% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.78% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.20% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Be careful. I'm keeping an eye on my step kids credit and I've learned that requesting a credit report for someone that doesn't already have one will actually start one. (Which, long story short, means that they could receive offers of credit by mail, etc) It may sound strange but I would recommend calling instead. Why are you shouting? So beautiful! Welcome to the neighborhood! My favorite neighborhood eats are Wayne's Wok, La Barca Birra and Adalbertacos.""
+
+Example 2: ""Just watched this episode.Can't believe ""the power"" was six years ago . I use the rifle from horseback. First I slow down then I fire at the enemy. This was one of my favorite years. They shouldn't hog a vehicle slot all round. People should have some generosity and let other people play the vehicle as well. That's why I wanted it to be given as another option, not enforced. I would much rather have a cap on smgs and such but this is a compromise. I have a British scout.""","[1114, 211]","[0.7494, 0.9841]",0.17106200997861726,0.2323592302209551,0.07,1.2,0.06,0.4206212989299029,0.04,6.32,5.78,0.2
+syn_0006,41.0,43.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.18% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.77% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.05% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.77% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.52% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.55% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.24% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Camelpaks are allowed. Isn't it infuriating?! Like obviously it isn't their *fault* if it doesn't get delivered (unless they never sent it in which case it's totally their fault), but it's not like it's our fault either. The most logical course of action would be to nix the late fee on the condition that the ticket is paid within X days of the customer service call, and if it's not then restore the late fee. HYMENS DON'T BREAK AT ALLsad that this is the second time in like a week that I've had to make that comment on reddit.""
+
+Example 2: ""More like every day. I agree, Laurel is my favorite character and she's been acting a lot different after Wes died. Regardless of her type, I think she's an unhealthy for whatever she is. I'm not too confident about her Ni, but the fact I don't see her as an Ne user is why I don't think she could be INFP (though it's not dominant like the ENFP and INFP is still possible). I think learning from the thought process behind how she believes that her father killed Wes does sound like Ni to me.""","[1269, 402]","[0.9541, 0.9902]",0.5281539558089807,0.4540270848182466,0.18,0.77,0.05,0.77,0.07,4.52,6.55,0.24
+syn_0007,1.0,61.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.11% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.40% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.18% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.64% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.16% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 3.84% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.34% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""If there were an award for my best roast, I'd give it to you. Let's cheers to this, and kick start my new eating disorder! Articles are not citations my misled friend. You start with doing dishes to Rammstein &amp; You end up cleaning your neighbor's house too. I believe so. The few blacks they see are extremely respectable, and conscious most likely. I've lived in neighborhoods where being afraid of black people was a perfectly reasonable and logical idea for the sake of self preservation.""
+
+Example 2: ""It's a problem with all the corsair headsets, it's utterly ridiculous. *damage control*. utter rubbish from my honourable friend, i use my rented Challenger II tank to ~~crush~~ beat the morning traffic and get to my work on time. The vacuums used in marine archaeology are only designed to pick up light objects, these chemical rounds are around 30kg so wouldn't be able to be picked up without sucking a diver in. Aye. aYE. This is actually down to the UK's strange laws on consent.""","[548, 817]","[1.229, 1.3293]",0.05844618674269423,0.601568068424804,0.11,1.4,0.18,0.64,0.07,5.16,3.8351478517423416,0.34
+syn_0008,39.0,75.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.06% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.11% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.07% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.15% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 6.53% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.42% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.45% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""One day at a time, indeed. It's such a freeing way to live. I always placed so much value on planning ahead. But actually living each day separately frees up so much valuable real estate in my head, which allows me to be more attentive and thoughtful. Should we... thank the pilot then? Alright... My eyes hurt. English bloke on a pussy smoke. Not the same dog, not the same guy. Like you pulled the words straight from my mind-hole. Holy cow.""
+
+Example 2: ""ex·is·ten·tial·istˌeɡzəˈsten(t)SHələst/Submitnoun1.a person who advocates the philosophical theory of existentialism.adjective1.relating to or supporting the philosophical theory of existentialism.""existentialist writers""Have you ever read Man's Search? It's basically the greatest piece of empirical evidence for existentialism. While I agree he was not a philosopher that expanded upon existentialism I have a hard time not seeing him as an existentialist as defined above. Peterson isn't a philosopher. Neither was Frankl. That does not mean they fon't apply existentialism and promote the concept of self-determinism. So I agree with you there. So let me get this straight.""","[680, 316]","[0.465, 0.7315]",0.5039201710620099,0.707056307911618,0.06,1.11,0.07,1.15,0.06,6.531709524229245,6.420919683659659,0.45
+syn_0009,26.0,26.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.18% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.74% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.04% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.83% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.07% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.64% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.29% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Oh heck yes. I'll be in Korea all year - I would love to be able to attend any T-ara related event. I honestly laughed when the ghost appeared for Nayeon's trailer. Going to cry. Too late. In Old School Runescape with the skills/gear I have on Mabinogi. Considering I have half of the total skill sets at rank 1 with end game gear, I can HCIM btw all day. Absolutely love Agatha Christie.""
+
+Example 2: ""Looks like we were pretty close on this one. EBCAD. [Here's mine.]( Excellent submission, thanks so much for posting. :DHope you like it!^^^[Tumblr]( And later, you should try the LLNIIENACMO challenge. Oh, uh, here's [an old one]( for the alt theme. I'm working on another 1950s drawing by coincidence, but I can already tell it's gonna take a while.Update: [Here]( is today's drawing for the alt theme. [Here's mine!]( I hope you like it!^^^[Tumblr]( Here is a [Mary Jane Watson/Stacey Rebecca]( try from a few days ago. Thanks! [Lunch break sketch]( - Borderlands 2: Angel. '82.""","[683, 554]","[0.8032, 0.9873]",0.4126870990734141,0.3207412687099073,0.18,1.74,0.04,0.83,0.0,5.07,7.638584569797328,0.29
+syn_0010,28.0,9.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.14% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.40% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.81% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.04% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 7.31% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.19% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 1.01% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Perhaps that means Test cricket needs to be more of a money-spinner for the players, then? This is brilliant, I've forwarded it to my co-founders. They might even listen to some of the advice! LIKE A GLOVE. I had a substantial ETF book hedged with futures over non farm payroll. I lost my hard built $25,000 profit in about 2 seconds. The light was amazing. Worth enjoying on an IPS screen, but nothing compares to the real thing. It was spellbinding.Driving my hire car up Passo Rolle first was fantastic too :-D.""
+
+Example 2: ""I keep fighting a guy who doesn't register hits and is 3 shotting me, fun. Moonlight GSCreighton's setWanderer HoodIllewlyn shield. I can drop the stuff you want for karma. Wanna trade Ruiner for Assassin's Creed III? Defender greatsword, thorned greatsword and heide weapons. Oh jeez, that head moves. If you're waiting X amount of time to write back on purpose that means you're just annoying and I am not going to write with you. Adrenaline junkie. Aay, congrats! I need this. Oh, I'm not planning to stop, no.""","[314, 495]","[0.761, 0.8335]",0.4240912330719886,0.16108339272986458,0.14,1.4,0.0,0.81,0.04,7.31067214118548,6.19,1.014751532866203
+syn_0011,84.92988441557782,90.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.04% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.30% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.04% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.80% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.45% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.66% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.21% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""No, they do not. The people here probably do, but we're tinkerers by nature. We can't help it. But most GMs use an established setting, unless you think the only people running Starwars is George Lucas. Hell, nearly every GURPS/FATE/Generic d20 fantasy game I've played or run uses an established setting too. Unless I've had the misfortune of only playing games with uncreative dolts or adults pressed for time, that seems to be a crazy perspective to have.""
+
+Example 2: ""De winter van 44. Ik heb een legit excuus om eronder uit te komen. ^^^^^^OuluToch moet ik zeggen, dat je toch best netjes gemaakt hebt haha. Poopie head! In this context AD stands for Active Directory. Vous ne méritez rien, bienvenue dans le monde réel. Fuck communism tho. Jesus Christ, why does she still even wear makeup... It's not like she is going to be any more attractive. Wel heel sportief dat ik jouw hele artikel lees en je mij dan afrekent op deze ene opmerking.""","[388, 556]","[0.5752, 0.7098]",0.8545972915181753,0.872416250890948,0.04,1.3,0.04,0.8,0.02,5.447040685662143,5.66,0.21
+syn_0012,6.0,46.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.24% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.64% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.31% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.21% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.71% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.19% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.12% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Law 7: Get other's to do your work for you. I figure you don't mean to lower our regard for the book; I thought it would be kind of funny to note how the laws apply here. The explanation for this law, though, does feel a bit general - everything builds off of someone else's work. I haven't read The Art of Worldly Wisdom, and the first time I read The Art of War it meant nothing to me.""
+
+Example 2: ""[Nip/Tuck]( Affair]( Openness 58 Conscientiousness 13 Extraversion 10 Agreeableness 70 Neuroticism 78 Not happy with my results, but they seem to be rather true overall. So if I got it right, after a good roll, you can get around 15k vials by disenchanting all the legendaries that you don't need, and focus would be to fully completely just 1 cheap and good deck? Seems like if you don't have enough vials for some of the cards it will be long till you have enough to complete your deck?""","[1216, 1226]","[1.4342, 1.4423]",0.14112615823235922,0.48182466143977193,0.2411125883581757,0.6400226568737785,0.3147719320638362,1.21,0.0,4.71,6.19,0.12
+syn_0013,34.0,81.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.14% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.52% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.35% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.09% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.09% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.73% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 8.22% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.05% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Well it's only happened when I was on birth control or pregnant. The first time I only took it for a month a quit because I was throwing up all the time. The second time I took a different type and stayed on it for a year and threw up until I stopped taking it. Then morning sickness the entire time I was pregnant, which is very unusual. I think it had a lot to do with the hormones.""
+
+Example 2: ""Thanks for the reply! No I don't have one and I don't know how to use one... Do you think I could maybe make one myself? I'm a student so my budget is a little limited... ��. Well, I'm enrolled in a joint master's programme, so I applied through a Danish uni and got accepted there. The whole programme is in China, though, but I get a double degree from both the Danish and the Chinese uni after two years.""","[809, 665]","[1.3236, 1.3738]",0.4868139700641482,0.7590876692801141,0.14,1.52,0.3472933434171182,1.09,0.09,4.73,8.22,0.05
+syn_0014,65.0,65.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.03% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.73% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.03% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.64% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.08% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 5.36% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.28% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""This is China. I doubt it.Source: Chinese heritage. :oI'll try it out. His administration was the one that chose to start enacting a ""tougher"" cruel interpretation of the policy in place instead of delivering an outright better ""comprehensive reform"" as promised.Let me paraphrase. What I hear is, based on your perception, Trump hasn't threatened you as a member of the LGBTQ community. Thus you don't see why people seem to vilify Trump supporters when those supporters don't express caveats about their support.Edit: thanks for having a civil discussion with me and adding your nuances.""
+
+Example 2: ""I still listen to them honestly, favourite band of all time. The sheer raw emotion in their songs is amazing. UK* Brexit, I don't think much more needs to be said about that shit show* NHS is slowly being dismantled.* Acid attacks of all things are becoming more of a thing now.* The DWP (Department for Work and Pensions) is pretty much carrying out a type of class genocide with how they treat people who are disabled/severely/chronically ill and can't work. So many people who have evidence and doctor's notes are often told they're fit to work.""","[182, 267]","[0.7249, 0.7901]",0.722024233784747,0.6286528866714184,0.03,0.73,0.03,0.64,0.06,5.08,5.364550368023329,0.28
+syn_0015,30.0,82.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.08% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.30% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.23% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.96% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.01% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 7.44% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.00% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.38% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Does anyone know what happened to the Audible and the Kindle version of The Fisherman? They both seem to be no longer available. Learn to read people and practice behaviour you are not good at. For some it is easier to put on a mask like that, others need a bit of time to make it work. Regarding your problems with communication, I can recommend reading some of Aristotele's Rhetoric. My guess is you rely purely on the Logos when formulating your arguments.""
+
+Example 2: ""Thank you! Your username is top notch! :) Thank you, I try my best. His ex liked to pretend he didn't have it, and just ignored it. Mental health is really important to me, so I try to help however I can. I remind him to take his medications, and I even go with him to his psychiatrist appointments. Omg I’m gonna listen on my lunch break. That’s so cool! Thanks!! I’m so sorry that happened. That’s terrible.""","[1322, 1000]","[1.1631, 1.2229]",0.4483250178189594,0.7733428367783322,0.08,1.3,0.23,0.96,0.01,7.439523183621562,7.0,0.38
+syn_0016,5.0,72.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.11% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.89% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.12% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.79% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.04% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.81% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 8.28% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.20% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I haven't seen much of Altman's work, although I am not the biggest fan of his, either. I am trying to find the full interview, but can't seem to access it, unfortunately. No. They last up to 10 hours, depending on what you are doing, of course. That makes me so happy! The thought that somebody, somewhere, could be listening to it out and about on their iPod brings me much joy. Thanks man.""
+
+Example 2: ""If this is the case, I'll gladly take anyone's spare AMD to keep them from suffering. But then you’re dining in hell. Nobody hates games like / . Nice to know that Ron Jeremy and a Dirty toilet are like finally on even playing fields after all this timeYou won't believe how hard the little hedgehog must've fought for equality. I'm also &lt;21 so my choices now are slim until next year around this time. On-campus nightclubs are just filled with college run-off looking for a drunk person to have sex with.""","[844, 93]","[0.9625, 1.2142]",0.11974340698503208,0.6785459729151817,0.11,0.89,0.12,1.7857703555687567,0.04,5.80626815453647,8.28,0.2
+syn_0017,95.0,75.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.12% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.08% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.05% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.09% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.33% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.79% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.49% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Does it feel hot, like the muscle just caught fire? Because that happens to me randomly. Hit them with the Greetings after playing Geist, of course. That’s the generalist build, and it works like a charm. Silence would’ve won you the game, but instead you teched for something else. In other words, you lost to something that teched against you without having a counter yourself. You fucked yourself, good job. Omg this is the first time I’ve seen this joke on reddit and I just about split a rib at work. That echo value. Pavlov’s customer. They’re training you!""
+
+Example 2: ""ex·is·ten·tial·istˌeɡzəˈsten(t)SHələst/Submitnoun1.a person who advocates the philosophical theory of existentialism.adjective1.relating to or supporting the philosophical theory of existentialism.""existentialist writers""Have you ever read Man's Search? It's basically the greatest piece of empirical evidence for existentialism. While I agree he was not a philosopher that expanded upon existentialism I have a hard time not seeing him as an existentialist as defined above. Peterson isn't a philosopher. Neither was Frankl. That does not mean they fon't apply existentialism and promote the concept of self-determinism. So I agree with you there. So let me get this straight.""","[378, 316]","[0.3862, 0.7249]",0.9729151817533856,0.707056307911618,0.12,1.08,0.05,1.09,0.06,6.33,6.79,0.4915913242143346
+syn_0018,34.0,36.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.12% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.07% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.06% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.86% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.12% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.88% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.97% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.30% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Thanks for your reply. It did really help.As for additional study, I've started exploring a bunch of online courses which seem interesting. I had a taste of Finance at university and I enjoyed it. Signed up for a few edx/coursera courses in Finance and some other things.I'm trying to take my camera out and make some great photographs. As of now, it's one of the main things which gets me really motivated. I had this concept in my mind of travelling part of the Annapurna Circuit in the Himalayas and putting together a photo journal.""
+
+Example 2: ""the map. Freshmen are burgundy. I can't really help you because I'm admitted to Viterbi, and don't know where the dornsife classes are. Good luck. I agree with summerslegato. To answer your actual question, I think a cuddly might not mean a lot. Just speaking from my own experience, if aren't in a relationship we can get a bit touch-starved and enjoy touch, even if we're not invested in the person. Probably something to do with our inferior .""","[921, 448]","[0.6606, 0.68]",0.4868139700641482,0.3977191732002851,0.12,1.07,0.06,0.86,0.12,5.878032442932981,6.97,0.3
+syn_0019,50.0,34.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.21% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.52% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.05% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.68% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.18% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.89% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.51% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.11% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Can confirm, but it gets better with age. To me, it's mostly **sensory overload**. I'm *really* sensitive to sound, so I usually shut down completely about 10 seconds after entering a loud and/or crowded place (which is why I normally avoid this :)). If I attend for some reason, I usually just stare at a wall until a sufficient number of people has left and things slow down. I have been misdiagnosed with Aspergers, because I'm *that* sensitive and get really unresponsive in such situations.Then, **conversation culture** plays a great role to me.""
+
+Example 2: ""Yes please! Pm me! Definitely be kind to yourself. I also found these effervescent greens that are lemon lime flavored- not something I’d do every day but maybe that’d help you get some veggies until this passes. Do you still have a well stocked condiment drawer with all the normal cooking items? If so I’d do eggs, potatoes, brown rice. When I was super broke I basically lived off of this. Oh and water (from the sink) and I’d steal kcups from my apartment complex lobby. Also, how does one secure a friend like Chris?""","[1012, 1091]","[1.4388, 1.4729]",0.6115466856735566,0.37491090520313614,0.21,1.52,0.05,1.6825317612837851,0.18,5.891519763704041,7.510156738192922,0.11
+syn_0020,15.0,61.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 3.58% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.27% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.20% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.20% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 8.42% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.26% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""If it's really cold and wet then I only go out for commuting to work. I'll still try to get out during autumn/winter months but I'll look for days when there is clear weather at least.When I do ride in bad conditions, it is mostly just a case of having to do extra maintenance/cleaning on the drive train. It's nothing too taxing, but if left alone it becomes an exponentially larger job.Just make sure to keep yourself extra visible and warm - though don't slap on too many layers, you'll soon heat up through riding.""
+
+Example 2: ""This is my first comment on here. my mom called me out on spending too much money. I told her I understand why she feels this ways, but I'm still going to do what I please and that she going to have to accept it because this isn't going to change. P.S. I spend my money on my developing my businesses, books, and my hobbies. She isn't really aware were my money is going, just that I spend it. I'm new here, but I would like to share.""","[1341, 1391]","[2.9574, 3.5747]",0.29294369208838206,0.601568068424804,0.07,3.582251568921615,0.27,1.2,0.06,6.202147992105014,8.42162195869407,0.26
+syn_0021,80.0,97.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.18% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.12% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.20% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.79% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.20% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.14% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.06% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""It depends on the circles you move in, I guess. I'm nerdy, and I hang out with a large variety of nerdy men and women, and they're all accepting and nonsexist. There was a period of time a few years ago when I didn't really feel...welcome or legitimate, I guess? But that was coming from the broader geek culture, during a time period when it was suddenly ""cool"" to be geeky, and tons of people were entering the subculture and getting really competitive and snooty about it.""
+
+Example 2: ""Its the stereotypes attached to the sites. Reddit being considered ""Nice Guy""^tm of the white knight variety, which Warren even calls himself in game. 4chan being edgelord psycho types who use phrases like sjw and flase flag or call anyone feminazis etc.Personally the stereotypes dont really hold much weight considering the user base of the sites being much broader but as the loud and obvious parts of those sites respectively thats what people tend to reference when talking about their users.""","[321, 341]","[1.1515, 1.2073]",0.8353528153955809,0.9657875980042766,0.18,1.12,0.2038911794241698,0.79,0.02,4.2,7.14,0.06
+syn_0022,29.0,70.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.22% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.53% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.22% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.61% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.80% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.97% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.58% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Look into Ray Peat philosophysEven if you wanted that candy, procrastinating over it will cause more stress then eating it, look it at that way. There is training but I'm not a carer I dont think I'm dealing with the old people. How are you defining ""behind""? Everyone is a different stages in life there is no ""in front"" or ""behind. or.. just put in ""im here for a hook up"" thats if you have the confidence of being direct and straight to the point.""
+
+Example 2: ""Welcome to PayPal! Your account is ready. You have a complementary £1,000. Don't forget to bid on items on / , or create your own auctions. Not content. The time has finally come! I am very pleased that this House has confidence in the highly qualified PetrosAC for Commissioner. I will be keeping the working peerage system that slug introduced as I think it is a much fairer and less party-centric way of recruiting peers to the House than before.""","[1213, 231]","[1.0638, 1.3707]",0.44119743406985035,0.6642908054169636,0.22,1.53,0.22,0.61,0.0,5.8,5.97,0.58
+syn_0023,9.0,92.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.06% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.42% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.01% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.64% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.11% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 4.93% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.54% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.70% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""It's his fault, you're just bring it to the attention of people who need to know. If you didn't do it, someone else would eventually, but how many others would need to endure that in the waiting? It is the first few things, but spend some time here and see some examples of guys turned toxic and it becomes more and more understandable every time. I'm not sure about Germany, but in North America a lot of lawyers do free consultations.""
+
+Example 2: ""Yeah this is a pretty common complaint with the way they do their ""skill based"" matchmaking. It frequently will make a team of middle tier players vs a team one or two upper tier players and 4 or 5 bottom tier players. Which isn't fair because unless you just have an amazing game or are in the top 5% you aren't carrying a team of people with .6 K/Ds. Age isn't the real issue, it the difference in priorities and being able to relate. But that often goes hand and hand with age.""","[29, 198]","[0.9241, 1.0416]",0.19600855310049894,0.9002138275124733,0.06,1.42,0.01,0.64,0.11,4.93,6.54,0.7
+syn_0024,85.0,25.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.08% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.73% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.30% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.92% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.03% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 4.89% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.89% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.39% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""How does it make you immature? And how the fuck is playing fantasy football mature? Like how the fuck is grown men watching people play with balls on TV mature at all? or his khaki denim jacket. design school? fall of efrafa. You look like you play bass in a hardcore punk band. the first one is the only one that includes a work placement, which may help me out in terms finding my apprenticeship no? on top of that, he side he grew up on the south side.""
+
+Example 2: ""Chubby chasers as well i'm pretty sure.Most women don't care about weight as much though, so they don't often get the label. Me. I was regularly on sluthate for about a year. It's not simple though. It is difficult for a lot of people. But the vast majority can change their weight.I am overweight. Only because i'm lazy. I don't exercise, I don't eat healthy. Completely my fault. This is the case with most fat people. They just choose to be fat because losing it isn't easy.""","[571, 243]","[1.4454, 1.4535]",0.8766928011404134,0.31004989308624376,0.08,1.73,0.3,0.92,0.03,4.89,7.89,0.39
+syn_0025,65.0,43.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.31% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.02% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.13% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.87% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.29% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 9.40% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 9.12% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 1.50% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I score highly in Neuroticism on the Big Five personality test. Nice to see a change from the usual normie proselytising, thanks. idk, too much time spent looking at fedora memes I guess. I tried the fake it till you make it thing, but it didn't work. I felt even more confused. Yes people learn those things but not when they're adults. Nobody is going to put up with it. I had my chance and it's gone. Too late.""
+
+Example 2: ""riptide - vancejoy. they kinda remind me of the killersi dig it. they are one of my fav bands toothough my 2 of choice would be glowing eyes and kitchen sink. GOLEM GET YE GONE. damn, im too late to have gold :(. [Best Day of My Life]( by American Authors. die. It fucking sucks losing that someone that we care about so much and will continue to for a while. People deal with it in different ways, like my friend, he just stayed at home in his bed, no crying or anything, just aphatetic for a while.""","[540, 1230]","[2.6036, 3.7506]",0.722024233784747,0.4540270848182466,0.311569876576923,1.02,0.13,1.87,0.286824956082055,9.395755451466416,9.12,1.4981532470773504
+syn_0026,39.0,6.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much less than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.16% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.21% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.03% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.17% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.20% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.12% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.13% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Agreed that surv aoe is not as good as the other specs, but I fail to see how that makes it mediocre. Especially when comparing it to the insane amount of aoe dps BM does, and then seeing a bm on a boss do half your total damage, I feel like mediocre is not an accurate way to describe it. -&gt;interesting build-&gt;diablo 3pick one. Have you played Chronomancer yet? It made me go from mehsmer to fuckyasmer. neither of these characters are thicc. What reason would a player have to not use this gem?""
+
+Example 2: ""Isso que dá querer tomar Nescau na hora do Toddynho. Otohime is donezo in deck building for the time being, you should replace her with Monika or Art of Ninja. I didn't expect that Netoge out of nowhere. Remember with me; Eris pads her chest. Now, join the Axis cult! Monika. I love her character and effect. If the last one that was posted here by the Rioters were accepting foreigners I would have definitely tried.Dynamic Queue is cool, but the system inflates the MMR and I haven't been playing enough since.""","[624, 382]","[0.8406, 0.9298]",0.5039201710620099,0.11831789023521026,0.16,1.21,0.03,1.17,0.0,5.2,7.12,0.128640063371115
+syn_0027,17.0,1.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.00% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.57% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.18% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.91% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.08% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.87% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.17% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 1.36% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""This is a disloging of the eye from its socket, not the socket itself; And coming from someone who has had a skull fracture from a hit, you don't HARDLY get hit. A skull is pretty damn hard. And yet it can't. Because me buying illegal drugs hurts no one but myself. I'm not infringing on the personal soverginty of another human; It's nonviolent. battery is. I'm violating their right to freedom from violence, otherwise known as right to life and liberty. Drug usage is a victimless crime, Battery is.""
+
+Example 2: ""Inb4 b-b-but republican governor! Al is wearing purple, you know what that means. It's finally happened. All these years... ITS HAPPENING. omae wa mou shindeiru. Northern MN is like this too. Southern MN is more midwest style white trash. Yep, otherwise we'll be seeing this stupid [meme]( again. The Long Dark Souls. A good way to get an elbow to the face. Why don't you have a seat over there? I don't really care for the large chickenwire looking grille. I would like the interior more if it weren't for the design of the infotainment system.""","[895, 597]","[1.2729, 1.3186]",0.31931575196008555,0.037776193870277974,0.0,1.57,0.18,0.91,0.08,5.87,6.168232705394349,1.36
+syn_0028,3.0,72.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.21% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.29% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.05% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.64% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.29% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.12% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.21% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""She made the pic of herself doing it her Facebook default pic... That's why she got fired. Bedford. She truly one-upped Katy's Prism semi-truck promo. Names ending in -den seem to be the thing now. Bittersweet Symphony. The whole song. There are actually Usenet archives where we can read what people were saying about pop stars in the 80s onward -- it was not unlike reddit.""
+
+Example 2: ""You can also easily check for unbalanced parens. ())(would pass your check, but is clearly not valid.to test for _balance_, keep a running count, incrementing for open and decrementing for close parens. If it ever gets negative, you have a problem (that sounds like an interview question) This is definitely my favourite donkey kong song. I listen to this one all the time: If you're a software engineer or hardware engineer (Nvidia?) then it's probably worth it strictly because silicon valley has a ton of opportunities.""","[80, 399]","[0.9105, 0.9967]",0.09408410548823949,0.6785459729151817,0.21,1.29,0.05,0.6385131553920652,0.0738503830735146,5.29,6.12,0.21
+syn_0029,65.0,47.492758902826495,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.14% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.95% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.04% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.80% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.10% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.45% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 8.80% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.34% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I'd totally play a Neopets/Silent Hill crossover. I mean, there's some dark stuff around already...But seriously, I wonder how Neopets in a sandbox survival style like Minecraft would work. I just wanted to say this is the most beautiful GIF ever. PoisonThorn: Iron Block. Minecraft Name: PoisonThornHow long have you been playing? 2 years, since 1.6What excites you about The Obsidian? The rules are fair without being unreasonable, and the server looks very organized! Ugh, been there, done that far too many damn times last semester,but in this case it was a friend. Sometimes I'm too nice. =(.""
+
+Example 2: "":') kaip imanoma net nezinot sitos jezau. thanksss!!! and yeah obviously getting compliment from a girl is much more flattering. sucks, but I have to agree with you. I'll try finding a cut that I like and a decent salon near by. i'm from Lithuania and I cant basketball for shit, sooo u dissapoint mr skeltal, no doot no doot. Kev does a weird smile and looks over to Jay afterwards, I think he noticed too. You mean you could right now play over a hundred songs beginning to end ??""","[1020, 918]","[0.7428, 1.477]",0.722024233784747,0.4896650035637919,0.14,1.95,0.04,1.8,0.1,6.45,8.796507396962829,0.34
+syn_0030,65.0,5.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.06% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.21% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.07% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.51% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 3.83% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.21% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.00% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Yup metagame, is all the stuff competitive people need to be aware before playing a match. Yup full name is the way to go. Because of no voters. As a person from inland Colombia, I don't really understand this either, this documentary gave me more insight into that part of our caribbean culture, I guess it went more in depth that some of the costeños i've talked to. It still feels weird to me, but I see it more like a sort of social pressure thing, if every boy around you is doing it, then why don't you?""
+
+Example 2: ""She had lots of previous hints that the eggs just needed warming, and put two and two together. Far from random, and not very speculative.Again, any type can be idealistic and want to change the world, it has little to do with Ne.I already agree that she's FP, you don't have to convince me of that.That could also be Fi, or again non-type-related. Lots of types like to hear stories. Are you saying an couldn't be type 2? Rare yes, but impossible?We have plenty of INxPs as well. Maybe internet typology forums just attract a lot of INxx types?""","[565, 173]","[0.787, 0.8174]",0.722024233784747,0.10334996436208126,0.06,1.21,0.07,0.51,0.02,3.8338165124634,6.205527775644485,0.0
+syn_0031,41.0,61.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.13% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.42% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.10% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.33% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.24% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.47% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.13% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I am gutted! A delay and such a lengthy one at that suggests to me few things. Either pre orders were reaally bad, or skyworld is expected to be a whole lot better and completely eclipse BT.Noone does such a panicked last second delay with a million dollar game without a real business concern. I'm so sad about it, oculus badly needed some variety in releases, it can't just be shooter after shooter after shooter. im just being skeptical, we'll know all the details how big a deal it is or not when its revealed.""
+
+Example 2: ""Yeah, that was just tasteless and gross. Come on, man... Why do you gotta be that way? ""Shine Like the Sun"" from *9 to 5* is a good number for three women. Additionally, ""I Just Might,"" also from *9 to 5*, though this is functionally moreso three individuals whereas ""Shine Like the Sun"" is a group. While this is true, Jim Cummings has been Pooh for 20+ years, so to many younger fans he is undoubtedly the “original” Pooh. I haven’t heard anyone outside the Chiefs sub call Mahomes a surefire franchise QB...""","[294, 573]","[0.9072, 0.9865]",0.5281539558089807,0.601568068424804,0.13,1.42,0.1,1.33,0.0,5.24,6.47,0.1307429827563555
+syn_0032,50.0,14.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.05% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.25% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.13% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.86% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.08% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.02% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.81% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.25% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""What would you do with illegal immigrants who have only been in the country for a matter of weeks? Of course there is! It's called the British Libertarians. 10 M198 Howitzers, 5 Aermacchi MB-326s, 8 M60 Pattons and $400,000,000 is donated. Ken Levine. ;) I love Jamesrileybn and his newest post! No, but there's bound to be. Communism in action, amirite? Nelson Mandela was a brilliant person, who stood up against the awful apartheid. That doesn't mean he wasn't a terrorist. In the future, there almost certainly will be no borders.""
+
+Example 2: ""So ironic liberal capitalist americans are submitted to the (pseudo)communist and opressive side of China.Honestly, as an outsider that's pretty pathetic to see. So you usually cave because he's technically ""right"" but don't feel fulfilled afterwards?What kind of discussions do you have? Does he try to convince you about reality being less pretty than you think (and would like to think) it is? Extremely different. An atheist is more similar to a muslim or a christian than to an agnostic. Not in my opinion.""","[384, 650]","[1.0647, 1.1067]",0.6115466856735566,0.21026372059871704,0.05,1.25,0.13,1.8611169033230703,0.08,6.02,6.81,0.2516748512790923
+syn_0033,95.0,67.31253834377128,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.08% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.12% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.07% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.99% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 7.05% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 5.26% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.50% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I've no interest in playing Anecdotes, it hasn't been my experience in the ones I've seen, that's all I can offer. Haven't seen yours and don't intend to.The fact is, it is society's business. No man, in truth, is an island and the habits embraced by some reflect society as a whole; allow me to explain, in marketing entire studies are devoted to the ways in which behavior can be changed through relatively minor [changes in environment]( from things as simple as moving unhealthy foods to the back and bringing healthy foods to the forefront, to merely color-coding food based…""
+
+Example 2: ""One day at a time, indeed. It's such a freeing way to live. I always placed so much value on planning ahead. But actually living each day separately frees up so much valuable real estate in my head, which allows me to be more attentive and thoughtful. Should we... thank the pilot then? Alright... My eyes hurt. English bloke on a pussy smoke. Not the same dog, not the same guy. Like you pulled the words straight from my mind-hole. Holy cow.""","[132, 680]","[0.6981, 0.9591]",0.9729151817533856,0.6478973627940128,0.08,1.12,0.07,0.99,0.06,7.05,5.2580321616192816,0.5
+syn_0034,15.0,26.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.03% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.78% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.13% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.70% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.79% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.18% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""u wot m8? Haha, well, that makes me feel a bit better! But still, they look great! Closest I can think of to that shape is that used in the [Nurmilintu]( pattern on Ravelry, where the pattern is:* R1: K1, KFB, K to 3 stitches before the end, K2tog, K1* R2: K to 2 stitches before the end, KFB, K1Hope that helps in some way! I swear I saw this tree (or it's twin, I guess) at a lot just yesterday.... this wouldn't happen to be in Connecticut, would it??? Those all look so pretty! Well done!""
+
+Example 2: ""Between 1947 and 1957. [ 35mm film stock roughly equals to a digital resolution of 4K. It's a bit wonky, since the grain isn't positioned in an orderly grid like with digital, but you can get the idea.Compare that to the 480 visible lines of NTSC rom back in the days. And that's not including things like contrast and color depth. You can even see her in action: Totally right! I'm not that familiar with *Voyager*. Mine too! Nobody will ever convince me Bayonetta is not a drug addled mess of speed-typing to hit them deadlines.""","[1128, 296]","[0.8866, 1.0962]",0.29294369208838206,0.3207412687099073,0.03,0.78,0.0,1.13,0.06,5.7,7.79,0.18
+syn_0035,15.0,53.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.14% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.31% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.15% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.06% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.26% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.00% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.36% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""It was made into a [Super Bowl commercial]( recently as well! Though it bothers me that they cut out her giving the operator an address. This question made me realize I've never used quickmatch. I don't think that's going to change though, I like to be very selective in who I match with. I also don't care about ""likes"" since I son't pay for OkC.I log in and check my messages first.""
+
+Example 2: ""I've never cut anyone close off in my life, because I'm so cautious in who I include in my life to begin with and thankfully that selective process hasn't failed me in this sense. But due to the idealistic tendency of the infp, cutting someone off (who is not super close or intimate) would be a non-issue seeing as though I have no problem writing someone off as quickly as I idealize them. It's really shitty, but... true. Its sad but I don't have enough attention span for Si dom storytelling.""","[20, 1251]","[0.6169, 0.7508]",0.29294369208838206,0.5481111903064861,0.14,1.31,0.15,1.062231663194151,0.07,6.258629021225891,7.0,0.36
+syn_0036,76.0,8.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.00% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.34% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.10% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.48% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.66% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.93% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.06% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Would you be willing to do that? lol. Ask more questions If that's too vague :) Yeah I know dude I'm still confused tho idk if esfp is completely me from reading descriptions. I’m also want to be PA but I’m studying Biology :) Nah. Wasnâ€™t trying to argue with u bro. I guess itâ€™s correct..at least for me. I can be empathetic and sympathetic towards everyone, but sometimes other emotions can override that. I actually see it as a good thing..""
+
+Example 2: ""This is not a remotely fair characterization of . OP is just a novice designer. Honestly the video looks kind of goofy. Dimir Teachings. Wow I didn't know that. I will probably add one to the sideboard in that case. I am pretty sure Dinosaurs are prehistoric... Visceral Mirage isn't really a Grixis thing, it is very white. the sacrificing creatures clause is strong, and very black. I think it might fit better in the blueless shard, whatever that is.Impose Will: What? So if you aren't playing big creatures, it is a counterspell for 1U?""","[1031, 527]","[0.9767, 1.0193]",0.8032786885245902,0.14112615823235922,0.0,1.3390642552555585,0.1,1.48,0.0,5.66,6.93,0.06
+syn_0037,9.0,22.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.21% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.46% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.88% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.60% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.09% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 4.80% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.70% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.32% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""6 Months ago, Feeling Severely inadequate. Felt nothing.. they call it the void. Thoughts consisted of trying to convince myself to do it. Took psilocybin and became woke, never looked back. Almost made the cut, 5w4 sx/sp. 1. Mediocre - Good. 2. Electrician / Armed Forces. 3. Unjustified/unearned authority ticks me off. 4. Often enough to understand I need to kick the habit. 5. Small circle of close friends, Medium sized group of normie friends. 6. Realism tbh, keeps me more grounded in terms of where I need to be. Wouldn't that be the ideal scenario tbh.""
+
+Example 2: ""Ok, you can have your dancing revolution, but just don't put it on television. I'm feeling way more aggressive toward this guy than I should. The family knew that fires started when the kids were unattended, but did nothing to keep matches or lighters away from the kids. None of the firefighters or police did anything when they were looking into the cause of the fires. Kids are alone... someone there lights something on fire. How were the family members not charged with child endangerment every time it happened?""","[966, 602]","[1.719, 1.8057]",0.19600855310049894,0.285816108339273,0.21,1.46,0.8801387924989718,0.6,0.09,4.8,5.7,0.32
+syn_0038,15.0,66.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.10% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.27% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.30% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.67% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.20% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.09% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.20% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.22% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Yeah, those fantasies are supposed to set of a dopamine reaction in your brain that will make you get off your ass and do stuff. It's supposed to make you anticipate a reward for doing things.I myself have come to a point where I no longer believe any of those fantasies, because I never get what they promise. As you can imagine, I'm not motivated to do very much of anything these days. I guess there is no way around an extended hiatus, huh? Note taken. :P. Hah. I've seen that on TV.""
+
+Example 2: ""I’m fine with it if said person let’s me know he’s getting more things. And even if he doesn’t, this isn’t something I’m going to start an argument about. i need to chill. Nothing. I come from a family that, while not exactly poor, massively mismanaged their money, meaning we rarely had any for anything other than the absolute basics. Seeing as I'm paying for my own schooling, bills, and rent, I still have that mentality. Food, and gifts for others are the only things I can buy without feeling guilty about it afterwards.""","[953, 666]","[1.5454, 1.6877]",0.29294369208838206,0.6307911617961511,0.1,1.27,0.3,0.67,0.2,5.09,6.203172981503823,0.22
+syn_0039,34.0,96.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.38% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.13% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.10% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.78% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.55% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.57% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.21% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Both possible flower-color phenotypes being expressed? It seems like the codominance is accidental or caused by some error though, because the flower should only be one color. I know that AP credit is just elective credit and places you into higher level classes. IB can count for a bit more (actual classes). Definitely bug your advisor until you find out though. I get bad cramping and pain in my right thigh, and find that instead of cringing in pain, breathing in and out in measures can really help with the pain.""
+
+Example 2: ""How are you going be okay with a history of destroying a country's economic/social potential, then come back, and say meeting me is the best thing to happen to you in your life? Like tbh I bet they wish they never met you...Also who is their right mind says, they wouldn't wish this child's life on their worst ""enemie."" Honestly, you just said that you don't want them to grow up seeing you fight but if your husband is willing to go toe-to-toe with you in front of your kids for you expressing that you don't like the gifts he…""","[987, 1103]","[1.3233, 1.3723]",0.4868139700641482,0.9536707056307911,0.38,1.13,0.1,0.78,0.06,4.547290345072227,6.57,0.21
+syn_0040,24.0,80.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.09% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.38% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.74% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.18% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.25% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.34% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Been riding hand me down bikes for my whole life. Current bike just broke almost completely (cheap bike don't want to deal with getting it repaired) and I am interested in buying a new bike. I mainly ride paved trails however I am interested in riding off-road and easy mountain bike trails. The guy at the bike shop recommended I get the Giant Talon 29er 3. I don't want to spend too much more than $500, is this a good option?""
+
+Example 2: ""I've always wanted to start getting more involved with fighting games, especially 2D fighters by ArcSys.Unfortunately, nobody I know likes fighters (especially 2D), and playing online has always been a bit too daunting for me due to lags, and WAY more experienced competition. I wish I had some IRL friends of similar level to learn to play with, but I guess I'll just have to settle for watching TBFP. Now that's a name I've not heard in a long time.""","[777, 902]","[0.9063, 0.9321]",0.39344262295081966,0.7555238774055595,0.09,1.38,0.0,0.74,0.0,6.184281619785058,7.25,0.34
+syn_0041,85.0,26.67592729569361,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.00% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.89% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.70% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.11% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.59% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.34% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.15% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Yeah I meant skull. They might when the game gets to the point where it has 15-20 people later game (or less). Until they solve this aspect of the game it will lack a ranked mode. It originates in CS makes and to a degree with its usage there makes sense. Players rotate around the map depending on enemy/team mates (kills, deaths, enemy pushing X). Its original use was ok.""
+
+Example 2: ""The answer is not ""personal"", but ""big picture"".Hypergamy creates dramatic divisions of rich (Alpha) and poor (Beta). 20% / 80%.Western civilization is no longer even able to maintain our birthrate.------Winning cultures always have some element of Patriarchy just so that enough people participate to keep it alive.Hypergamy is a low efficiency system.MGTOW is caused by Hypergamy. no more now sadly. Lack of evidence is not a counter proof.""","[362, 851]","[1.0916, 1.2508]",0.8766928011404134,0.3207412687099073,0.0,0.89,0.0,0.7,0.11,4.59375284234265,6.34,0.15
+syn_0042,41.0,3.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much less than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.13% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.32% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.22% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.52% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.04% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.07% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.51% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.82% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Cochran was left alive (surprisingly) for a reason - I'm assuming a strategic reason. Hopefully. He knows too much to just be overlooked and left breathing. Im a 47 yr old male with Aspergers/ASD and I can't technically swim. I can survive in moderately deep water in swimming pools - but I've been terrified of water my entire life. I'd for sure drown in a do-or-die situation in an open body of water.""
+
+Example 2: ""Yeah, it's a thing. I mean, I don't think it has long lasting repercussions, but I like to think that somewhere out there, there is an alien waiting for me to go to them so we can be married and have adorable abominations together. It is terrifying. It must be stopped with violent force. Friend started drinking after the election. To my knowledge, she has not stopped. I do the conquering around here tyvm. I couldn't detect the subtle palates of different varieties of wine after 3 tastings.""","[319, 391]","[0.823, 1.0606]",0.5281539558089807,0.06486101211689238,0.13,1.32,0.22,0.52,0.04,6.07,5.5112288383839525,0.82
+syn_0043,53.0,72.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.25% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.87% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.04% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.93% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.44% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.99% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.51% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Personally I know to get a good night sleep and I try to get early to bed, but having sleep apnea, it's really hard to get rested when you wake up 6-7 times a night with 1-2 hour interval. First you say they are second hand. Then you ask if they are? Make up your mind and no I don't have links for them. Damn that's some amazing format. Great reviews too :) StreetWhere. I'm loving your honesty and your thoughts on this.""
+
+Example 2: ""In February, Walmart raised its pay scale in response to Obamian pressure. Obama even called the Walmart CEO from AF1 to thank him a week later.Now, this. There's something that stinks of ulterior about all this. I was rather enjoying the music and I forgot I was watching a death video. It's like someone pulled the plug on the radio :(. Wait. Do they wake up? It's impossible to insult this guy. No matter what you tell him...he turns the other cheek. That car could be parked and it would still be racing.""","[124, 1278]","[1.172, 1.1723]",0.6258018531717747,0.6785459729151817,0.25,0.87,0.04,0.93,0.02,5.44,5.99,0.51
+syn_0044,5.442472208574458,85.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.11% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.27% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.08% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.16% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.15% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.09% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.44% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.66% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""i'm not gonna do your homework, but I'll tell you this: an analysis of literature is essentially three questions:what is this text trying to do?is it doing it?how?answer those. Fluffier. I dunno. I've never made it without. Everyone makes it with milk here, I swear. That's just how it's made. Hey - the NX probably won't be backwards compatible and Wii U games will hopefully take a price cut. You've got plenty to enjoy and the best part of a year before the next thing. GCSEs are actually really pretty important for a lot of people.""
+
+Example 2: ""Whaaa I thought he was quite big in his underarmor shirt. CDB. yep. Thanks again.I've never done a deload before *purposefully* (other than taking a week off because of life), so I'd like to learn how to approach this.You recommended option 3: 60% for one week, then back on the grind. Would that be a better approach than what I suggested?Also, if I were to deload to 60%, I'm assuming I should still go nuts on my AMRAP sets (i.e.""","[449, 257]","[0.9123, 0.9781]",0.11974340698503208,0.8139700641482538,0.11,1.27,0.08,1.16,0.1479077261614998,5.09,6.44,0.66
+syn_0045,85.0,70.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.08% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.18% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.13% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.84% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.68% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.56% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.23% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""A girl in her 20s acting like a 14-year-old clingy girlfriend who’s never had a boyfriend before, getting butthurt when her 30-something partner refused to make a New Year’s resolution. No one else had made any. She left crying, which meant the guy had to go, too, and the party was over pretty much after that. I hear this pattern is a trend for her even three years later.""
+
+Example 2: ""But if you believe so much that we can turn an inhospitable planet into our future than I wouldn't assume we cannot ""unwreck"" the planet Earth as well. I don't think Mars is suppose to be some safe haven from some failing Earth as much as it is just the next step in our conquest as a species. I feel like a good 25% of are just quotes people read then posted to . Or actually maybe thats a good 25% of all of reddit.""","[406, 295]","[0.7685, 0.949]",0.8766928011404134,0.6642908054169636,0.08,1.18,0.1276608845802025,0.84,0.07,4.68,7.56,0.23
+syn_0046,15.0,98.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.12% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.36% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.07% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.69% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 4.87% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 4.53% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.66% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""7. Girlfriend renounces Islam.8. Girlfriend is executed9. Boyfriend repeats steps 1-8 with another girl. Here's the proof:Let 0.999999... = xThen 10x = 9.9999999...9x = 10x - x = 9.9999999... - 0.999999... = 9Therefore if 9x = 9, x = 1.We originally also defined x = 0.99999... Therefore 0.99999... = 1The trick is that 10x = 9.99999...""
+
+Example 2: ""That my boyfriend murdered me and chopped me up in our apartment. It was the couple who moved in after us :(. That part about relaxation is spot on. Hello, fellow introvert. Very similar situation here... feels like losing yourself. Holy fuck. Am I the only one super impressed that neither vehicle collided with the other? For such shitty drivers, they really had their weaving and cut-offs coordinated. I'd still like to nominate both for mandatory mass transit until they can stop being from Maryland. Charlotte. Followed other family members and in laws.""","[441, 986]","[1.0253, 1.147]",0.29294369208838206,0.9828937990021382,0.12,1.36,0.07,0.69,0.0,4.87,4.53,0.66
+syn_0047,11.0,92.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.00% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.17% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.35% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.17% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 6.59% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.11% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.64% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Ay sweet, thanks! We just got a new fridge and the old one is sitting around, looks like I'll put it to good use. Any idea how long I should leave it (16L/4 gallons) in the fridge before bottling? Female here. Yeah that's what I was thinking. And the reason it feels neither good nor bad is you actually have to kind of put ""work"" into letting it feel good. Sometimes pleasure gets too much and goes straight to intense, and you have to learn to relax into it and let it feel good.""
+
+Example 2: ""this. I am struggling through the suite, and I have just committed to doing it badly.it takes courage to write a ""vomit draft.""or: you gotta squeeze out a whole lot of pus before you get to the blood.edit: see Peterson's interview with Gregg Hurwitz for further discussion of the necessity of the ""vomit draft"" in writing. great interview overall. Thank you! I have been searching for this quote for a long time now. Source?""","[96, 1049]","[1.5589, 1.6244]",0.23022095509622237,0.9002138275124733,0.0,1.17,0.35,1.17,0.06,6.593765554198444,7.11,0.64
+syn_0048,3.0,93.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.67% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.06% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.24% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.38% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.00% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.47% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Wasn't there something about Balotelli AGUEROOO being his first assist because of that? Like, that was the first time he'd actually done an assist that season, the other four or five were all times Balotelli had shot on target and had the shot saved and spill out to someone who scored? I'm probably talking total shit but I've just remembered it and now I'm curious.""
+
+Example 2: ""God, will you two just bang already. Lol hope you've got 6 months of thread titles in you. It would definitely be my preferred method after a breakup, but I think women can smell the sadness on me (it smells like whiskey) Arent they already? It's a 14km climb, it's difficult to prohibit anything. Well, no one ever caught the [Fen Tiger]( Maybe he's just found new digs? ��. Neat. But aren't most of these just personal problems dressed up as women's issues?""","[265, 370]","[0.9162, 0.9657]",0.09408410548823949,0.9137562366357804,0.07,1.67,0.06,1.24,0.02,4.378069892617953,6.0,0.47
+syn_0049,44.0,99.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.02% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.13% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.03% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.45% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.04% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.18% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 5.32% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.78% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""did somebody say silence?.^^^^BLACKLIVESMATTER. **THE INCONSISTENCY IS STAGGERING**. 10 feet taller. I Want to Make America Great Again.#NO BRAKES!!! right. talk. not wave it in like a third base coach! We're Going to Build a Wall. #NO BRAKES!!! I'm expecting a pretty substantial reckoning of all of this soon. erm 10 pounds heavier triggly puff. #NO BRAKES!!! WHAT THE HELL? HE WAS IN VA YESTERDAY??!?! # #TrumpIsTheRealFlash #MAGASpeedForce #CantStopWinning CantStumpWontStump. #CAN'T DENY THE DINO. ALABAMALANDSLIDE.""
+
+Example 2: ""I think this might be considered internalized mysogyny. Bill Watterson fucks. I bet men are in more accidents because when both people are in the car, who's driving? The husband or wife? They've been on the brink of destruction for 2 decades man. AMD has always been the one to lead the way, it's just that Intel usually takes AMDs idea and does it better than AMD. AMD came out with 64 bit processors and Intel didn't want to.""","[264, 913]","[0.8275, 0.8992]",0.5409836065573771,0.9992872416250891,0.02,1.13,0.03,0.45,0.04,5.18,5.32,0.78
+syn_0050,13.0,80.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.10% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.82% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.16% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.74% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.03% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.28% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 5.46% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 1.43% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""#CRUZ AMENDMENT IS 50-50!!!#C'MON SILVER FOX!!!! #THIS BILL SHALL PASS. Robinhood is working. Just use Chuck Norris memes with Grassley's face pasted on Norris' body. Isn't it amazing??? I get people want to legalize weed. I do too. But we need to change the laws, not ignore the ones currently in place. That's what the democrats do.Plus, most of the places illegally allowing the sale of cannabis are also high Dem areas with lots of likely voter fraud and corruption. Pot investigations may lead to bigger fish. Yah, Yah! 2017 mister, could I get you Charlie Sheen?""
+
+Example 2: ""Inb4 b-b-but republican governor! Al is wearing purple, you know what that means. It's finally happened. All these years... ITS HAPPENING. omae wa mou shindeiru. Northern MN is like this too. Southern MN is more midwest style white trash. Yep, otherwise we'll be seeing this stupid [meme]( again. The Long Dark Souls. A good way to get an elbow to the face. Why don't you have a seat over there? I don't really care for the large chickenwire looking grille. I would like the interior more if it weren't for the design of the infotainment system.""","[848, 597]","[1.2147, 1.3979]",0.25445473984319317,0.7555238774055595,0.1,1.823041412042944,0.16,0.74,0.03,6.28,5.46,1.43
+syn_0051,89.0,36.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.22% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.48% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.11% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.63% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.09% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.09% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.96% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.19% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""She made the pic of herself doing it her Facebook default pic... That's why she got fired. Bedford. She truly one-upped Katy's Prism semi-truck promo. Names ending in -den seem to be the thing now. Bittersweet Symphony. The whole song. There are actually Usenet archives where we can read what people were saying about pop stars in the 80s onward -- it was not unlike reddit.""
+
+Example 2: ""Surely this could be the subject of a civil case (?) I know! Really pleased. It's a patch of land with some little hills, trees and bushes, very relaxing :) Streamlight Nano: I've had mine for years now, in fact most of the black paint has scratched off now. I'd highly recommend it. So much bullshit, the government recently issued a response to a petition about this""This Government currently does not have plans to legislate on a set minimum space e.g. 1 metre on roads with a speed limit of up to 30mph when overtaking a cyclist."" Mirror pls.""","[80, 653]","[1.0276, 1.0429]",0.9201710620099787,0.3977191732002851,0.22,1.48,0.11,0.63,0.09,5.09,5.96,0.19
+syn_0052,20.0,84.08971515064968,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.16% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.15% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.18% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.88% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.08% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.05% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.98% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.44% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I have a friend who was arrested for filming a cop beating a student during a ""victory riot."" My friend was charged with assaulting a police officer and was held for three days. The student who was beaten required brain surgery. Calculus gets much more advanced than that and it is fairly arrogant to think you have a general understanding of calculus. I saw that a lot in engineering majors who took a few semesters and that was it. There is so much more to it.""
+
+Example 2: ""So many questions.... Why does she eat at night? Does she wake up to go eat? How often does it happen; it has to happen pretty regularly for it to become a habit? Why cereal? Nah, he was obviously a master manipulator and liar. He was involved in a lot of politics, and had he not been into rape and murder, he would have made a great politician. Even if she was, it would not be okay to beat her.""","[305, 569]","[0.436, 0.5473]",0.3499643620812545,0.7890235210263721,0.16,1.15,0.18,0.88,0.08,5.05,6.97812476744571,0.4409911604770855
+syn_0053,23.0,17.604955831565178,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.10% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.08% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.18% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.83% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.87% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.50% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.59% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Because we see the world for what it truly is, while normies see the world in a distorted way from their own viewpoint distorted by genetic and social privilege and entitlement. Aww shit, that is how it is. People you hung out on IRC with? Getting into second marriages. People you played Diablo 2 and HOMM 3 with? Moved to other countries, got families and careers. All the guildmates in World of Warcraft? Stopped playing years ago, servers got merged, etc. That MUD you played for a few years?""
+
+Example 2: ""Thank you! Your username is top notch! :) Thank you, I try my best. His ex liked to pretend he didn't have it, and just ignored it. Mental health is really important to me, so I try to help however I can. I remind him to take his medications, and I even go with him to his psychiatrist appointments. Omg I’m gonna listen on my lunch break. That’s so cool! Thanks!! I’m so sorry that happened. That’s terrible.""","[450, 1000]","[1.1745, 1.2247]",0.37847469707769066,0.25160370634354956,0.1,1.08,0.18,0.83,0.0,5.87,7.503383691542192,0.59
+syn_0054,56.0,78.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.10% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.07% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.90% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.30% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.93% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.38% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Good memory! Indeed, [it was Stone Phillips]( 1066 Hastings, bitch! England is a French colony - VIVE LA FRANCE!!!! <U+FFFD><U+FFFD><U+FFFD><U+FFFD> <U+FFFD><U+FFFD><U+FFFD><U+FFFD> <U+FFFD><U+FFFD><U+FFFD><U+FFFD> <U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+2694><U+FE0F><U+2694><U+FE0F><U+2694><U+FE0F><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD>. All of it? * the larger faction of Al-Nusra now make up the majority of the rebel forces engaging Assad's troops* especially in the area surrounding Aleppo.""
+
+Example 2: ""Tony's is being remodeled right now and they never mentioned when it will open back up but i agree that breakfast is great there. Oh dang, talk about miscommunication haha! My b , I was talking about KG playing the 3 for Minny. Well you pretty much nailed it on the head! These are great body weight exercises. Omg this would be amazing. Eh, we were down for a day. We bounced back and the month still looks good to be Spartan. LOL, what a fool.""","[354, 980]","[0.6111, 0.6874]",0.6486101211689237,0.7277263007840342,0.07,1.1,0.07,0.9,0.02,5.302607101367521,6.93,0.38
+syn_0055,47.634253740384565,92.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.11% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.02% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.01% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.28% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.11% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.29% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""So awesome! ����. Young Kim Kardashian was hot. After all the surgeries, it depends on the guy....some guys have no limit on cosmetic surgery -- some (like me) can't stand it. It's actually the opposite. Source: golfer with big hands. Because most people like movies where things happen. His intent was clearly to get the arm out of the way, therefore his intent couldn’t have been to block the ball. I hope they kick me out of this country for smoking weed. Then I can be a refugee in a country that is governed by and for its citizens.""
+
+Example 2: ""HOLD ON HOLD ON HOLD ON HOLD ON. This reminds me of when I started using the Sunshot and noticed it had splash damage. I went up to a wall somewhat expecting to be able to damage myself with it, but sadly found out I couldn't. Jokingly, I turned to my brother who was watching me play and said, ""What's the point of living if I can't kill myself?"" Avdol looks like he stole his dad's sports jacket. They jump back in the whole on the other side of the earth. #JEB IS A WASTE.""","[26, 109]","[0.2383, 0.5596]",0.5630791161796151,0.9002138275124733,0.07,1.11,0.02,1.01,0.06,5.28,6.11,0.29
+syn_0056,21.0,76.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.10% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.11% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.10% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.09% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 6.97% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.87% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.44% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Does it feel hot, like the muscle just caught fire? Because that happens to me randomly. Hit them with the Greetings after playing Geist, of course. That’s the generalist build, and it works like a charm. Silence would’ve won you the game, but instead you teched for something else. In other words, you lost to something that teched against you without having a counter yourself. You fucked yourself, good job. Omg this is the first time I’ve seen this joke on reddit and I just about split a rib at work. That echo value. Pavlov’s customer. They’re training you!""
+
+Example 2: ""[Who said that?]( Drag may pay *better* for RPDR queens but it's still not a regular paycheck. So do you wanna help out a friend in need, orrrr. Honey she's got all the same faces you do. ~~Tomi Lahren~~ Toenail Lasagna. What would Hemmy say?! Give her a (patriotic) sewing challenge and she'll give you what you like! In the books, Spencer's dad is both of their fathers. He had an affair w/ Jessica D. **BICTH**. I bet Sasha gets into some freaky shit. I don't even like Sasha, but she was definitely robbed.""","[378, 188]","[0.9044, 0.9624]",0.36065573770491804,0.7170349251603706,0.1,1.11,0.0,1.1,0.09,6.965236475756142,6.87,0.44
+syn_0057,50.531215640329606,99.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.09% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.94% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.34% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.73% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.05% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.09% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 8.50% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.17% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I almost never wear makeup for longer than 6 hours, but it stays on and looking good for me. Longevity is one of the main things people are praising it for in reviews I've read. I'd consider trying an elimination diet on a trial basis to see how I feel when eliminating different foods. I have serious doubts about my ability to permanently give up gluten or dairy or sugar or whatever, but it's definitely useful to know how they make you feel.""
+
+Example 2: ""I'm a woman who wears makeup daily and my ADHD has never got in the way of that! Feel free to drop me a PM if you have any specific questions :) I have dry skin so I might be ok if it settled well on your non-oily area! I used to have the exact same issues you did when I started working as a bartender and also in my first professional job.""","[810, 823]","[1.3573, 1.5212]",0.6115466856735566,0.9992872416250891,0.09,0.94,0.34,1.73,0.05,6.087451653901072,8.502327968956497,0.17
+syn_0058,40.0,43.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.00% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.14% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.55% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.13% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.67% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.11% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Why would you release vassals? They don't drain any influence ._.8 def pacts is WAY too much though. Also, it is normal to have a net loss of influence during integration, as +2-4 influence income without any temporary modifiers is pretty normal and reliable. Because the queue times are now abbysmally long. And guns. They have guns there. And some of the less stupid self-defence laws. So like a trim on the lower half of the cloak? You know what's better than a free gun?Two free guns. Well your space geko advisor speaks in English so gekos probably too.""
+
+Example 2: ""Yes, this definitely affected my perception. For instance the most overweight looking person, at 6'4, I actually had no frame of reference for because my family are all much shorter and none quite that heavy. I probably wouldn't have given under 300lbs because I've not heard of weights above that. I honestly welled up at points, looking at Icelandic landscapes. There's something so primal about the beauty of that country. Ooh how'd you know I studied biology?! But funnily enough I do pronounce that the English way, I didn't realise that.""","[955, 492]","[0.846, 0.9476]",0.5153243050605845,0.4540270848182466,0.0,1.14,0.0,1.5524450511008967,0.02,5.13,7.67,0.11
+syn_0059,15.0,15.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.06% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.56% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.07% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.38% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.05% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.08% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.75% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.23% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Wait why are these confessions? Is there a more accepted way to brew? The lightest sleeping pad is no sleeping pad. Pretty sure all reddit flairs just look like clutter to me. Not sure if I'm the only one, but I'd say that subreddits generally look better without them. Such a relevant username too. Its 2018 now. We need IPv8. I think that it also could tell you what certain heroes are doing too. If you see a missing enemy gain a level, they are definitely farming in the fog. I'll start trying this in my games.""
+
+Example 2: ""WALT!!!! Was the primary motivation for moving your site host from Bluehost to Siteground the speed increase or were there other factors as well? It is a Wicked maneuver. I agree, I just felt the need to take the piss. :) I'd ideally like to see options for individual single, double, and triple taps on each AirPod.""","[835, 148]","[0.8507, 0.8899]",0.29294369208838206,0.2323592302209551,0.06,1.5564907718391396,0.07,0.38,0.05,5.08,5.75,0.23
+syn_0060,86.0,26.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.30% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.30% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.14% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.61% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.01% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.01% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.95% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.94% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Definitely someone just faking their location to prank you or whatever. I had it the other way around. Found out one of my closest friends had a crush on me, and sometime later realized how much of an asshole I had been to her. As a young and stupid teenager, it really was kind of an eye-opener realising I was the bad guy in someone else's life. B. Yeah, obviously the guy was a dumbass. But the driver shouldve at least tried to slow down when he saw the other car stop like that in front of the crossing.""
+
+Example 2: ""Woah... I live near a Johnson City. What state are you from? what :(. I've seen Haken live! Wonderful band, amazing music and very down to earth and talented musicians. I definitely recommend them to all my prog-inclined friends as well :) In my line, we tape only down to just before where you grip. That way they're still weighted, have the aesthetic and protect the sticks but your hand oils don't fuck with the tape. This past year I marched snare, though bass is my favorite marching drum! :) Binghamton University bearcat!""","[868, 911]","[1.0927, 1.7424]",0.8880969351389879,0.3207412687099073,0.3,1.3,0.14,1.61,0.01,6.01,7.95,0.94
+syn_0061,40.1210115371415,98.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.04% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.11% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.08% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.47% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 4.90% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.23% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I joked that Jesse Eisenberg just played Michael Cera in that film. On holiday, can't be bothered. Have fun without me. If you're going to argue my ""Once a Bipper, always a Bipper"" statement, you should at least make an effort. Where did Andrew Mitchell come from? Haha.Can you find the Jo Brand one? Hell yeah, Banter's awesome.""
+
+Example 2: ""is this ironic. As I said, the goal of punishment is not to deter. You shouldn't inflict suffering on people (which is what punishment is) unless they *deserve* it. If you punish people in order to reduce crime, then you use people as mere means to an end. There would be nothing wrong, in principle, with hurting an innocent, so long as it reduced crime. But clearly there is something wrong with this: innocents do not deserve to be punished. And the guilty *do*.Except every European country which abolished the death penalty did so *against* the public's wishes.""","[203, 33]","[0.7388, 0.7807]",0.5153243050605845,0.9828937990021382,0.04,1.11,0.0,1.08,0.02,5.47,4.900508234347701,0.23
+syn_0062,43.0,7.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.10% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.14% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.67% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.04% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.20% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.91% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.09% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Feels like an absolute limited bomb. Would it see constructed play as well? It would definitely love in at least one EDH deck. Human feet and Cats not included. ## Art Transcription### Nightveil PredatorA dark figure floats mysteriously above a balcony overlooking a dark city skyline dotted with guild buildings. To one side they are lit by a blue spectral light, and the other a warm glow from the streets below. Their elaborate cloak's collar extends up behind the head grandly.""
+
+Example 2: ""Something like [this]( Sorry for potato quality. I’ve been seeing a lot of the [expanding brain memes]( online. Some are more tongue-in-cheek the others.Here’s [one on economics]( and / ’s one on [social construction]( one on [gender]( one on [various nations’ wars]( ""I didn't know"" -Hillary Clinton. I'll edit my post. Thank you. Susan M. Dynarski takes on [online education]( for *Brookings*.""","[139, 143]","[0.5859, 0.6179]",0.5352815395580898,0.1361368496079829,0.1,1.14,0.0,0.67,0.04,5.2,5.913975757268502,0.09
+syn_0063,77.0,15.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.46% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.83% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 6.58% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.56% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.14% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""well yeah ofc, but also i dont like being able to go 1st time stuff and win because my opponent fails. i wanna learn how to use the champ to abuse my opponents small mistakes not the lvl 2 tower dive allins. if you get what im saying. gold 1 , 1 w 9 l gold 2. ahri. Who was talkin bout competetive play and if so wont the support help under turret farming? Feels like u talk bout the two completely different games called soloq and pro play at the same time lmao. thanks :D.""
+
+Example 2: ""I've always wanted to start getting more involved with fighting games, especially 2D fighters by ArcSys.Unfortunately, nobody I know likes fighters (especially 2D), and playing online has always been a bit too daunting for me due to lags, and WAY more experienced competition. I wish I had some IRL friends of similar level to learn to play with, but I guess I'll just have to settle for watching TBFP. Now that's a name I've not heard in a long time.""","[1034, 902]","[0.9905, 1.0723]",0.8139700641482538,0.2323592302209551,0.07,1.46,0.0,0.83,0.0,6.579256972814164,7.56,0.14
+syn_0064,61.0,95.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.12% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.37% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.30% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.00% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.11% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.68% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.23% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.10% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Yep. That's what I try to do. You'll also learn when you can use it based on each individual fight. If you notice the healers rarely run out of mp in certain phases, you can use Foe's without worry about saving your MP. It's also best to sing the songs when the enemies disappear, so you aren't losing dps. Ex: When Garuda goes to do her big moves, use your song while you wait behind the rock. Also, try to carry some ethers so you can get a quick bit of mp if you need it.""
+
+Example 2: ""Thanks for the reply! No I don't have one and I don't know how to use one... Do you think I could maybe make one myself? I'm a student so my budget is a little limited... ��. Well, I'm enrolled in a joint master's programme, so I applied through a Danish uni and got accepted there. The whole programme is in China, though, but I get a double degree from both the Danish and the Chinese uni after two years.""","[356, 665]","[0.8021, 0.8567]",0.6942266571632216,0.9394155381325731,0.12,1.37,0.3,1.0,0.11,5.68,7.23,0.1
+syn_0065,54.0,18.59756575888667,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat less than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.25% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.13% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.43% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.13% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 4.98% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.30% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Since all transaction are public, it’s technically impossible. The WannaCry guys had their bitcoin converted to Monero coins, which are anonymous, but the exchange was later asked to ban certain address by the authorities. Exchanges have interest in not accepting those coins as they don’t want end up with worthless dirty coins later. That an issue with bitcoin. It’s not fungible. That is, not all coins are equals as some can be banned. There is nothing rational about shooting a bunch of cartoonists.""
+
+Example 2: ""Showing my age here: the last time I syndicated something, you had to roll your own. I finally just had YouTube create one via a public playlist. I am now going through depressive phases where I almost can't even tell, thanks to Abillify. I didn't notice the change until I got a little grumpy, instead of a LOT of grumpy. :-) Bottlenose dolphins have signature whistles (a whistle that is unique to a specific individual), but they develop these themselves and other dolphins just imitate the whistle when they want to get their attention.""","[25, 643]","[0.9386, 0.987]",0.6372059871703493,0.25588025659301494,0.07,1.25,0.13,0.43,0.02,5.13,4.98,0.3
+syn_0066,3.0,40.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.06% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 2.43% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.06% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.31% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.71% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 5.45% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.05% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I'd rather do neither and hit the help button to get a cop involved. If someone tried stepping in, they would probably get a haymaker or two thrown their way. I personally don't worry about ticket prices since I prefer watching at home. It's more convenient and cheaper. I don't have to deal with having to pay 5 to 6 bucks for a hot dog or a soda or spend over an hour traveling to watch a baseball game. And to think the end of this game will mark the halfway point of the season at 81 games.""
+
+Example 2: ""CHAMBER ROLLS/ [[1d100+25 ANO]][[1d100-5 TOP 09]][[1d100+5 CSSD]][[1d100+15 KSCM]][[1d100+15 ODS]][[1d100-10 KDUCSL]][[1d100-25 SPD]] [m] Figured that part. They have football and three ECHL hockey teams. And Gary, IN.Source: From central Indiana. &gt;oppose #11 with 1 cavalryWELCOME TO THE NEW ERA. A NEW ERA OF THE X. Hello again, people. SENATE ELECTION ROLLS[[1d100 ANO]][[1d100 CSSD]][[1d100 ODS]][[1d100 KDU–ČSL]][[1d100 TOPSTAN]]/ . Thankfully, they added that filtering system so we don't have to see them. Really helpful. Downloading the Pokemon Sun/Moon Demo and waiting for this to finish, then I'm gonna play some BF1. Today is a good day. Tampermonkey.""","[916, 888]","[1.1505, 1.5337]",0.09408410548823949,0.43264433357091947,0.06,2.4334520361420027,0.06,0.307071203063511,0.07,5.711346982852933,5.450219585902094,0.05
+syn_0067,88.0,55.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.10% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.76% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.10% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.40% of words)
+- fatigue: words about tiredness or fatigue; aim for about typical (target ≈ 0.06% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.08% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.14% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.69% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""yup. I really don't think the backlash is the reason they don't do reaction videos that much anymore. They set out to be an alternative comedy channel, not a reaction video channel. And they don't want it to get stale. I honestly think I've watched all their videos on both channels minus some unlisted ones and I think there's definitely a ""homemade"" amateur feeling missing from their newer videos, but I don't think the quality of comedy has dropped off at all, might even be at its best right now.""
+
+Example 2: ""car. Holy shit, did they bolt a big enough rack on this bitch? ""I am purposefully misusing the website but want to complain that my misuse makes it broken.""You can't de-curate a curation service and then complain it's not curated. Hey genius, I wasn't asking to have MY car shit on either. Most of the commenters completely ignored the meat of my post to hyperfocus on a side comment I made at the end of my post. Anyone who thinks I was asking to have my vehicle purchasing choices roasted without any context whatsoever can fuck off, including you.""","[979, 330]","[0.8322, 1.0195]",0.902352102637206,0.5616535994297933,0.1,0.76,0.1,1.4,0.06,6.08,7.136790388347565,0.69
+syn_0068,52.0,50.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.07% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.83% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.03% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.85% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.35% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.13% of words)
+- swear: swear / curse words; aim for about typical (target ≈ 0.38% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""More like every day. I agree, Laurel is my favorite character and she's been acting a lot different after Wes died. Regardless of her type, I think she's an unhealthy for whatever she is. I'm not too confident about her Ni, but the fact I don't see her as an Ne user is why I don't think she could be INFP (though it's not dominant like the ENFP and INFP is still possible). I think learning from the thought process behind how she believes that her father killed Wes does sound like Ni to me.""
+
+Example 2: ""Ok, Thanks for the suggestions! What airport is this? DFW? Do I get my Lamborghini now? So do can manta rays like tail whip something to kill it or is it more of a passive thing? I think the superior seed for such an en devour would be Poppy. That shit gets everywhere. Your mother was a hamster, and your father smelt of elderberries dear sir. There should be a commander that calls in Captain America. He cost 1337 Manpower, 420 munitions and 69 fuel.""","[402, 856]","[0.7662, 0.7992]",0.6179615110477548,0.5374198146828225,0.07,0.83,0.03,0.85,0.07,4.34966236653131,6.13,0.38
+syn_0069,93.0,40.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.20% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.51% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.55% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.93% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.80% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 5.56% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.00% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I wouldn't say Si as eeeeh... I'm not huge on tools. Finally got out of a six month spiral. My psychiatrist decided that my classification as having schizoaffective disorder was false and six months ago took me off my antipsychotic and messed with my mood stabilizer. Turns out he was wrong and recovery from that has been an uphill battle.It is rough. The last six months i've been someone I'm not and it has pushed my friends away and hurt a lot of my life. It'll take a while to regain everything and undo all that damage.""
+
+Example 2: ""What about it makes it so hard to understand? That's a perfectly valid reason. It's not my responsibility to bring another life into the world. To believe that there are inherent social responsibilities that every human needs to undertake is quite foolish. If you took any US Government and Politics course, you would know that the media deserves all of the blame it gets. All I care about is which one is better at minimizing crime. Hmm, it does fit.""","[171, 85]","[1.4033, 1.4145]",0.9565217391304348,0.43264433357091947,0.2,1.51,0.5497251630841152,0.93,0.07,5.8,5.56,0.0
+syn_0070,19.0,32.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for about typical (target ≈ 0.11% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.18% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.00% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.97% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.25% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 6.07% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.44% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.27% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Lecturer (if by that you meant student) . The class was for an hour and God it was long. The good thing is that a few peoole noticed that I gained weight and a bit of muscle. that's always something. My ex crush didn't talked to me and I didn't either. I couldn't even call her name or look at her. We parted without saying goodbye because I forgot one thing in the class. We said like 2 sentences to each other and it was weird, at last for me.""
+
+Example 2: ""Natural hotdog. (renown for being creepy af) &lt;-- warning, very, very disgusting. They don't understand the physics, all they see are the grains. No sense of danger from the other pigeons as they are all paying attention to the ungodly amount of food under their noses so they all calmly die. How do you make the difference ? I think that charm isn't a thing you have conscience control over. Don't let the trolls get to you lmao. What the fuck ? Pretty cool imo. Yes, because then they wouldn't need to eat humans.""","[781, 522]","[1.7336, 1.7607]",0.33713471133285816,0.3649322879543835,0.11,1.18,0.0,0.97,0.25,6.07,6.44,0.27
+syn_0071,17.0,90.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.31% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.73% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.10% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.61% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.03% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 6.94% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 8.45% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.46% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""These are really cool. It's hard for me to pick a favorite when there's a lot of good options to go with from this show. But a quote I really like right now is from Jasper. It's the delivery of the last couple of lines that get me. Edenian Bride? What is this, I must have it. How exciting, I hope I win :3. RIP Nanefua, we hardly knew ye. Wow, these are all amazing. This is me except I play oblivious to not ruin any friendships just in case.""
+
+Example 2: ""this so much! i'm mixed black/white and you wouldn't believe how many times i've had guys tell me they don't like darker girls or how they are so in love with mixed girls but never want to date a black girl. it's creepy as hell. yeah...tbh, i've only gotten those untactful type of comments from white people. &gt;_&gt; i think, in most cases, it comes from their parents not talking about how to be respectful when speaking to minorities about their heritage. so, they're not intending to be rude, but it just happens.""","[471, 431]","[1.2741, 1.5701]",0.31931575196008555,0.872416250890948,0.31,1.73,0.1,1.61,0.03,6.94,8.454365910163915,0.46
+syn_0072,93.0,50.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences much more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.53% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.94% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.08% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.44% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.07% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.64% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.01% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.49% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I want to say something encouraging, and I want to tell you that you're making the wrong choice, but I've never been in love before. I can't imagine how either of you feel. I can only think that if I fell in love with someone and then walked away from them, regardless of the circumstances, I would regret that for the rest of my life. Whichever you choose, I hope you're able to make peace with that decision in the future. Don't give up. Mostly subtext, but one side character is a lesbian.""
+
+Example 2: ""paano mag-apply haha. Had a roster change after roster lock. wenn to xNova. Dude, when you started talking about financial support a week in, you should have stopped chatting with her already. Alarm bells ringing everywhere.I'm sure there are plenty of women at your place. Go out and date them. Don't look for love within the confines of the cyberzone. That's just a recipe for disaster. Uy wag mo masyado seryosohin. Nagloloko lang kami. hahaSubjective naman panlasa ng mga tao. Sa amin, mas masarap talaga sa niyog ang cheese. Pero okay din 'yung pichi-pichi na may mani.""","[1155, 127]","[1.9741, 2.1699]",0.9565217391304348,0.5374198146828225,0.5326090702697457,1.9437279991959484,0.08,0.44,0.07,5.636385874592013,6.01,0.49
+syn_0073,34.0,98.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs much more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.15% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.79% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.17% of words)
+- certitude: words expressing certainty or conviction; aim for higher than typical (target ≈ 1.27% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.11% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.43% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 7.22% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.51% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Interesting thanks. No, that's called problem solving. I mean if its real I definitely dont have any ROFL. I understand human emotional responses at about the level of a baboon. Being an F type just means you have a lot of random feelings.doesnt mean your iq is higher just because intellectualize everything. this is already recognized by personality dimensions of agreeableness, extroversion, and neuroticism. Its pretty redundant to create a new category called EQ and considering such a personality complex a form of intelligence is really sketchy just as considering ""hardworking"" a form of intelligence would be sketchy.""
+
+Example 2: ""Those are from the spin-off timeline that is created if Thanos kills Sans. Hayao Miyazaki confirmed that while they're canon they don't contain relevant lore for Delta Rune unlike all the other games in this image, that's why I didn't include them. It's mostly because of what he did in 2-1. If I only counted 2-5 he would be higher. When did Rohan grow an afro. Byakuya, Chihiro and Kiyotaka are my top 3 in that order.""","[223, 168]","[0.959, 1.0142]",0.4868139700641482,0.9828937990021382,0.15,0.792192463415748,0.17,1.274568973658229,0.11,5.43,7.221223508361759,0.51
+syn_0074,39.0,80.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for higher than typical (target ≈ 0.42% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for higher than typical (target ≈ 1.96% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.17% of words)
+- certitude: words expressing certainty or conviction; aim for lower than typical (target ≈ 0.67% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.16% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.51% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 5.26% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.09% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""C. I. ^^^^or ^^^^other ^^^^females. I'm sorry you went through that, that's abuse and sounds terrible. My mum had a nice phase. My brother once said she’s now like the sweet reasonable mum we wish we had. As she and my brother got closer it went worse, escalating to some of her worst jealous, even violent behaviours. Your experience is valid and the furthest and more independent you are the better she’ll be. Goodbye.""
+
+Example 2: ""We don't hate you, though. Love you. Look at you up in your tower. Nobody claimed it was a high form of humour. Some might think its funny, some might think it's not. But, it's never homophobic. And that was the point I wanted to make. I'm ENTP and my girlfriend is an ISFJ. I like the record a lot. I've seen them friday in Germany and they were amazing. The crowd went wild and we had a nice mosh pit. They played at a festival so not everyone was happy with the mosh pit.""","[927, 944]","[1.4194, 2.0074]",0.5039201710620099,0.7555238774055595,0.42,1.96,0.17,0.6707267823986598,0.16,5.5065184892275445,5.264848976882124,0.09
+syn_0075,30.0,63.19657998909054,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.05% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.26% of words)
+- mental: words referring to mental states or cognition about the mind; aim for about typical (target ≈ 0.12% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.90% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.02% of words)
+- Affect: overall affective / emotional language; aim for higher than typical (target ≈ 7.24% of words)
+- adverb: adverbs that modify how actions or states are described; aim for about typical (target ≈ 6.51% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.17% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Sure, add me next time you log in (alexmoita) longer one:Extraversion: 18Neuroticism: 74Agreeableness: 24Conscientiousness: 4Openness to Experience: 77. Banning Deceiver Exarch instead would've been interesting.. so lazy it hurts. It took me 15 min, more or less, to add them with cheat engine &amp; a career_mode table.. smh .. Sure you can, for a monthly fee at least, manatraders offers this option. *Follow my referral link if you want to help me out ;) 1 Trinket Mage 1 or 2 Snapcaster Mage 1 Treasure Mage 1 Solemn SimulacrumThat's alll u need. Just play Mono U Tron, master it.""
+
+Example 2: ""I have an extreme fear that I'm going to do one thing to someone and they'll hate me forever. Something similar has happened to me a few instances with different people and the guilt of it - despite how justified the action I took may have been - is still hard to get past. 1. I wish I could dance. Dancing is ingrained in my community and culture and I constantly feel ostracized for not being able to join in.2. I'd wish for success in regards to work.""","[1056, 1324]","[0.8908, 1.0273]",0.4483250178189594,0.6179615110477548,0.05,1.26,0.12,0.9,0.02,7.24,6.51,0.17
+syn_0076,50.0,36.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.06% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for about typical (target ≈ 1.13% of words)
+- mental: words referring to mental states or cognition about the mind; aim for higher than typical (target ≈ 0.15% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.98% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.08% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.74% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.63% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.04% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""I didn't even mind the Witcher 3 bugs, except for a bunch of crashes. As a rare occurrence, the animation bugs were rather funny. Fallout 4 also had maybe 2 minor bugs within 25 hours for me, no problem at all. Can somebody check VRAM usage for certain settings at common resolutions? Thanks. And that's just the portion for breakfast. Certainly Skellige, especially the village Fayrlund west of the center of Ard Skellig. Nearby, the have a forest, the sea, a little stream and a view of mountains and great plains. Quite beautiful, if they weren't lacking the hospitality.""
+
+Example 2: ""Would be a short flight, though. Well... you know that [scene from TBBT where they are staring at a whiteboard]( To an outsider, I imagine, it must look pretty much like that. Only that I scribble a lot more.But that's not relevant to you. You'd like to know how *I* perceive being a mathematician. So, let me give you a very rough outline.There are many parts to being a researching mathematician. * There is **research** itself, which is just brilliant (to a person with a certain personality).""","[830, 366]","[1.0271, 1.0332]",0.6115466856735566,0.3977191732002851,0.06,1.13,0.15,0.98,0.08,5.74,7.628628893800851,0.04
+syn_0077,19.0,46.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat less than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs about as much as most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.04% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.27% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.09% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.84% of words)
+- fatigue: words about tiredness or fatigue; aim for higher than typical (target ≈ 0.10% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.28% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 7.65% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.17% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""u wot m8? Haha, well, that makes me feel a bit better! But still, they look great! Closest I can think of to that shape is that used in the [Nurmilintu]( pattern on Ravelry, where the pattern is:* R1: K1, KFB, K to 3 stitches before the end, K2tog, K1* R2: K to 2 stitches before the end, KFB, K1Hope that helps in some way! I swear I saw this tree (or it's twin, I guess) at a lot just yesterday.... this wouldn't happen to be in Connecticut, would it??? Those all look so pretty! Well done!""
+
+Example 2: ""They need to do it like in football, Champions league, and world cup. Where amount of teams from the region based on results from the teams. Every region still gets some amount of teams but proportion is based on their result in previous tournament(s). This system is quite balanced i think. they have some kind of points system that goes to each region i think.""","[1128, 290]","[1.6419, 1.8999]",0.33713471133285816,0.48182466143977193,0.04,0.2735642180340836,0.09,0.84,0.1,5.28,7.646614867838348,0.17
+syn_0078,70.0,73.6937334380101,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.05% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 1.12% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.03% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 0.94% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for about typical (target ≈ 5.25% of words)
+- adverb: adverbs that modify how actions or states are described; aim for lower than typical (target ≈ 5.16% of words)
+- swear: swear / curse words; aim for higher than typical (target ≈ 0.94% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""7. Girlfriend renounces Islam.8. Girlfriend is executed9. Boyfriend repeats steps 1-8 with another girl. Here's the proof:Let 0.999999... = xThen 10x = 9.9999999...9x = 10x - x = 9.9999999... - 0.999999... = 9Therefore if 9x = 9, x = 1.We originally also defined x = 0.99999... Therefore 0.99999... = 1The trick is that 10x = 9.99999...""
+
+Example 2: ""Honestly i doubt this is weight cut related. Sounds like a concussion from sparring that he tried to push through. Right. The marginal upgrade is only worth it if you can easily afford it, or unless your rb situation is such that it will be much more than a marginal upgrade. I didn't really root for or against Robbie before this, always kinda disliked him cuz he took out 2 of my favorite fighters in Rory and Cowboy.After his class act here I'm gonna be on his side for the future.""","[441, 59]","[1.0251, 1.3253]",0.7704918032786885,0.6906628652886672,0.05,1.12,0.03,0.94,0.0,5.253364480459078,5.1559627334667315,0.94
+syn_0079,69.20994507190835,85.0,"a Reddit commenter who tends to seek novelty, ideas, and new experiences somewhat more than most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people","- emo_sad: words expressing sadness or low mood; aim for lower than typical (target ≈ 0.09% of words)
+- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target ≈ 0.91% of words)
+- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target ≈ 0.05% of words)
+- certitude: words expressing certainty or conviction; aim for about typical (target ≈ 1.09% of words)
+- fatigue: words about tiredness or fatigue; aim for lower than typical (target ≈ 0.00% of words)
+- Affect: overall affective / emotional language; aim for lower than typical (target ≈ 4.36% of words)
+- adverb: adverbs that modify how actions or states are described; aim for higher than typical (target ≈ 8.19% of words)
+- swear: swear / curse words; aim for lower than typical (target ≈ 0.08% of words)","Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice — not their topics:
+
+Example 1: ""Between 1947 and 1957. [ 35mm film stock roughly equals to a digital resolution of 4K. It's a bit wonky, since the grain isn't positioned in an orderly grid like with digital, but you can get the idea.Compare that to the 480 visible lines of NTSC rom back in the days. And that's not including things like contrast and color depth. You can even see her in action: Totally right! I'm not that familiar with *Voyager*. Mine too! Nobody will ever convince me Bayonetta is not a drug addled mess of speed-typing to hit them deadlines.""
+
+Example 2: ""not to get people paranoid, but i would think that because of the nature of this sub, they'd probably have to take a more deceptive approach. it would be too obvious to have a history of all borderline posts. i think the infiltration would have to include a period of creating relationships and groups. i dunno how serious they are though. they're obviously active in the main sub. but only obvious in the voting. there doesn't seem to be much organization, or maybe that's the intent.""","[296, 433]","[1.0479, 1.3023]",0.7391304347826086,0.8139700641482538,0.09,0.91,0.05,1.0876763311202775,0.0,4.36,8.190904408102654,0.08

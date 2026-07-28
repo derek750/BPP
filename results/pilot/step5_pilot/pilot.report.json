@@ -1,0 +1,452 @@
+{
+  "generations": "/Users/derek/Developer/Controled Generation/optimized/results/step5_pilot/pilot_generations.csv",
+  "summary": "/Users/derek/Developer/Controled Generation/optimized/results/step5_pilot/pilot_condition_summary.csv",
+  "categories": [
+    "emo_sad",
+    "focusfuture",
+    "mental",
+    "certitude",
+    "fatigue",
+    "Affect",
+    "adverb",
+    "swear"
+  ],
+  "mock_generation": false,
+  "mock_liwc": false,
+  "validation": {
+    "essay_level": {
+      "lex_fewshot": {
+        "n": 24,
+        "mean_standardized_mae": 3.1080582578712055,
+        "self_identification_rate": 0.08333333333333333,
+        "mean_ttr": 0.683791211251096,
+        "mean_per_category": {
+          "mean_rho": 0.5507677757407883,
+          "mean_slope": 3.2832585580620925
+        },
+        "pooled_z_target_output": {
+          "rho": 0.5311070764050126,
+          "slope": 0.5436515448315513,
+          "intercept": -1.9823329112212936e-16
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": 0.5837757964470471,
+            "slope": 3.0631604226705087,
+            "intercept": -0.1010398655139288
+          },
+          "focusfuture": {
+            "rho": 0.5696883457447658,
+            "slope": 2.6688974854932304,
+            "intercept": -1.2652314313346231
+          },
+          "mental": {
+            "rho": NaN,
+            "slope": 0.0,
+            "intercept": 0.0
+          },
+          "certitude": {
+            "rho": 0.43417759668908207,
+            "slope": 2.3937513945381546,
+            "intercept": 0.0036820968309920765
+          },
+          "fatigue": {
+            "rho": 0.6345955185466843,
+            "slope": 12.983643590628626,
+            "intercept": 0.03788144316203779
+          },
+          "Affect": {
+            "rho": 0.3419109742201152,
+            "slope": 0.8187631441391531,
+            "intercept": 1.295950157459334
+          },
+          "adverb": {
+            "rho": 0.44822452841569804,
+            "slope": 0.6967289312720736,
+            "intercept": 4.309170167749845
+          },
+          "swear": {
+            "rho": 0.8430016701221253,
+            "slope": 3.6411234957549934,
+            "intercept": -0.5315203582734959
+          }
+        }
+      },
+      "liwc_only": {
+        "n": 24,
+        "mean_standardized_mae": 3.384476891929926,
+        "self_identification_rate": 0.0,
+        "mean_ttr": 0.6790627435307424,
+        "mean_per_category": {
+          "mean_rho": 0.37650864206293805,
+          "mean_slope": 2.3916895045660373
+        },
+        "pooled_z_target_output": {
+          "rho": 0.38551586516254327,
+          "slope": 0.31825642060369347,
+          "intercept": -7.403005295152788e-17
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": 0.14665773949540703,
+            "slope": 1.7814601344860708,
+            "intercept": 0.093873679154659
+          },
+          "focusfuture": {
+            "rho": 0.541247683322792,
+            "slope": 2.431624758220503,
+            "intercept": -0.5711905222437137
+          },
+          "mental": {
+            "rho": -0.030254451040802585,
+            "slope": -0.09974597798475866,
+            "intercept": 0.0355585661868473
+          },
+          "certitude": {
+            "rho": 0.43078388528668254,
+            "slope": 2.1745400819838556,
+            "intercept": 0.4511149893907398
+          },
+          "fatigue": {
+            "rho": 0.5931036544456976,
+            "slope": 9.104013096355171,
+            "intercept": 0.14808517787175274
+          },
+          "Affect": {
+            "rho": 0.28247699061699316,
+            "slope": 0.6793151297848858,
+            "intercept": 2.004886133298242
+          },
+          "adverb": {
+            "rho": 0.22667906654450068,
+            "slope": -0.0611665413128612,
+            "intercept": 10.42547371226907
+          },
+          "swear": {
+            "rho": 0.8213745678322338,
+            "slope": 3.123475354995432,
+            "intercept": -0.45109440481549445
+          }
+        }
+      },
+      "persona_liwc": {
+        "n": 24,
+        "mean_standardized_mae": 3.331868017585522,
+        "self_identification_rate": 0.0,
+        "mean_ttr": 0.6810173097439295,
+        "mean_per_category": {
+          "mean_rho": 0.41463931248782,
+          "mean_slope": 2.714782558505929
+        },
+        "pooled_z_target_output": {
+          "rho": 0.4157652149657621,
+          "slope": 0.40151149268859904,
+          "intercept": -8.634993497226275e-17
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": 0.15661426213301888,
+            "slope": 0.8182036503362147,
+            "intercept": 0.35276176753122
+          },
+          "focusfuture": {
+            "rho": 0.5803157376049946,
+            "slope": 2.1411605415860735,
+            "intercept": -0.6582932301740811
+          },
+          "mental": {
+            "rho": 0.3327989614488284,
+            "slope": 1.3435224386113465,
+            "intercept": -0.07974343776460627
+          },
+          "certitude": {
+            "rho": 0.2859643608715239,
+            "slope": 1.6170621024644376,
+            "intercept": 1.0171843959463576
+          },
+          "fatigue": {
+            "rho": 0.7415165707049919,
+            "slope": 12.911810008126482,
+            "intercept": 0.014188755298462752
+          },
+          "Affect": {
+            "rho": 0.3968609522197765,
+            "slope": 0.7625156093183628,
+            "intercept": 2.194202136307543
+          },
+          "adverb": {
+            "rho": 0.07672214559967715,
+            "slope": -0.19186969646065052,
+            "intercept": 10.89096787917231
+          },
+          "swear": {
+            "rho": 0.7463215093197485,
+            "slope": 2.315855814065166,
+            "intercept": -0.25798078724172047
+          }
+        }
+      },
+      "persona_only": {
+        "n": 24,
+        "mean_standardized_mae": 1.7579201687098138,
+        "self_identification_rate": 0.041666666666666664,
+        "mean_ttr": 0.6827743139976005,
+        "mean_per_category": {
+          "mean_rho": -0.11967104451113367,
+          "mean_slope": -0.5243928983482433
+        },
+        "pooled_z_target_output": {
+          "rho": -0.1155161071825782,
+          "slope": -0.14136451694654556,
+          "intercept": 7.956777577774116e-18
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": -0.213912017530654,
+            "slope": -0.7377521613832853,
+            "intercept": 0.22601825168107587
+          },
+          "focusfuture": {
+            "rho": 0.10061818149303323,
+            "slope": -0.0494777562862672,
+            "intercept": 0.9440780464216637
+          },
+          "mental": {
+            "rho": -0.23397879330316415,
+            "slope": -0.3650296359017782,
+            "intercept": 0.12434038950042337
+          },
+          "certitude": {
+            "rho": -0.07935492623702046,
+            "slope": -0.4992667326372479,
+            "intercept": 2.096864075695677
+          },
+          "fatigue": {
+            "rho": -0.39287259752878806,
+            "slope": -2.251230524210841,
+            "intercept": 0.17986975673497066
+          },
+          "Affect": {
+            "rho": -0.09241531174506566,
+            "slope": -0.3291912083430269,
+            "intercept": 7.475842394621385
+          },
+          "adverb": {
+            "rho": 0.2868985794723048,
+            "slope": 0.2598875153603609,
+            "intercept": 5.41686476888508
+          },
+          "swear": {
+            "rho": -0.33235147070971494,
+            "slope": -0.2230826833838611,
+            "intercept": 0.14480198263258065
+          }
+        }
+      }
+    },
+    "author_level": {
+      "lex_fewshot": {
+        "n_authors": 12,
+        "mean_standardized_mae": 3.1080582578712055,
+        "mean_per_category": {
+          "mean_rho": 0.5607403707063235,
+          "mean_slope": 3.2832585580620925
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": 0.6847511815193305,
+            "slope": 3.0631604226705087,
+            "intercept": -0.10103986551392885
+          },
+          "focusfuture": {
+            "rho": 0.6175476611238034,
+            "slope": 2.6688974854932304,
+            "intercept": -1.2652314313346236
+          },
+          "mental": {
+            "rho": NaN,
+            "slope": 0.0,
+            "intercept": 0.0
+          },
+          "certitude": {
+            "rho": 0.41958041958041964,
+            "slope": 2.3937513945381546,
+            "intercept": 0.0036820968309920765
+          },
+          "fatigue": {
+            "rho": 0.681021082201701,
+            "slope": 12.983643590628626,
+            "intercept": 0.03788144316203779
+          },
+          "Affect": {
+            "rho": 0.23076923076923078,
+            "slope": 0.8187631441391531,
+            "intercept": 1.2959501574593357
+          },
+          "adverb": {
+            "rho": 0.4125874125874127,
+            "slope": 0.6967289312720737,
+            "intercept": 4.309170167749844
+          },
+          "swear": {
+            "rho": 0.8789256071623669,
+            "slope": 3.641123495754993,
+            "intercept": -0.5315203582734961
+          }
+        }
+      },
+      "liwc_only": {
+        "n_authors": 12,
+        "mean_standardized_mae": 3.384476891929926,
+        "mean_per_category": {
+          "mean_rho": 0.46069801064239013,
+          "mean_slope": 2.3916895045660373
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": 0.4347389169935059,
+            "slope": 1.7814601344860705,
+            "intercept": 0.0938736791546591
+          },
+          "focusfuture": {
+            "rho": 0.6982499122933914,
+            "slope": 2.4316247582205035,
+            "intercept": -0.5711905222437146
+          },
+          "mental": {
+            "rho": -0.043747863925980714,
+            "slope": -0.09974597798475869,
+            "intercept": 0.03555856618684731
+          },
+          "certitude": {
+            "rho": 0.4265734265734266,
+            "slope": 2.1745400819838556,
+            "intercept": 0.4511149893907389
+          },
+          "fatigue": {
+            "rho": 0.737059896227247,
+            "slope": 9.104013096355171,
+            "intercept": 0.1480851778717528
+          },
+          "Affect": {
+            "rho": 0.2937062937062937,
+            "slope": 0.6793151297848858,
+            "intercept": 2.0048861332982426
+          },
+          "adverb": {
+            "rho": 0.2797202797202798,
+            "slope": -0.061166541312861054,
+            "intercept": 10.425473712269069
+          },
+          "swear": {
+            "rho": 0.8592832235509577,
+            "slope": 3.123475354995432,
+            "intercept": -0.4510944048154949
+          }
+        }
+      },
+      "persona_liwc": {
+        "n_authors": 12,
+        "mean_standardized_mae": 3.331868017585522,
+        "mean_per_category": {
+          "mean_rho": 0.5470960989402445,
+          "mean_slope": 2.714782558505929
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": 0.2405525136765929,
+            "slope": 0.8182036503362149,
+            "intercept": 0.35276176753122
+          },
+          "focusfuture": {
+            "rho": 0.7543906087591917,
+            "slope": 2.1411605415860735,
+            "intercept": -0.658293230174082
+          },
+          "mental": {
+            "rho": 0.48122650318578786,
+            "slope": 1.3435224386113462,
+            "intercept": -0.0797434377646063
+          },
+          "certitude": {
+            "rho": 0.49650349650349657,
+            "slope": 1.6170621024644374,
+            "intercept": 1.0171843959463573
+          },
+          "fatigue": {
+            "rho": 0.7866197309764821,
+            "slope": 12.911810008126482,
+            "intercept": 0.014188755298462863
+          },
+          "Affect": {
+            "rho": 0.5104895104895105,
+            "slope": 0.7625156093183632,
+            "intercept": 2.194202136307541
+          },
+          "adverb": {
+            "rho": 0.30069930069930073,
+            "slope": -0.19186969646065055,
+            "intercept": 10.89096787917231
+          },
+          "swear": {
+            "rho": 0.8062871272315929,
+            "slope": 2.3158558140651655,
+            "intercept": -0.2579807872417207
+          }
+        }
+      },
+      "persona_only": {
+        "n_authors": 12,
+        "mean_standardized_mae": 1.7579201687098138,
+        "mean_per_category": {
+          "mean_rho": -0.19206402362376362,
+          "mean_slope": -0.5243928983482433
+        },
+        "per_category": {
+          "emo_sad": {
+            "rho": -0.3868769276247462,
+            "slope": -0.7377521613832853,
+            "intercept": 0.2260182516810759
+          },
+          "focusfuture": {
+            "rho": 0.09666095771422802,
+            "slope": -0.04947775628626725,
+            "intercept": 0.9440780464216637
+          },
+          "mental": {
+            "rho": -0.3494114385844496,
+            "slope": -0.3650296359017781,
+            "intercept": 0.12434038950042337
+          },
+          "certitude": {
+            "rho": -0.2027972027972028,
+            "slope": -0.4992667326372477,
+            "intercept": 2.0968640756956765
+          },
+          "fatigue": {
+            "rho": -0.5596123850368832,
+            "slope": -2.251230524210841,
+            "intercept": 0.17986975673497063
+          },
+          "Affect": {
+            "rho": -0.027972027972027972,
+            "slope": -0.32919120834302695,
+            "intercept": 7.475842394621385
+          },
+          "adverb": {
+            "rho": 0.3916083916083916,
+            "slope": 0.2598875153603611,
+            "intercept": 5.41686476888508
+          },
+          "swear": {
+            "rho": -0.49811155629741866,
+            "slope": -0.22308268338386106,
+            "intercept": 0.14480198263258065
+          }
+        }
+      }
+    },
+    "n_valid": 96,
+    "n_errors": 0
+  }
+}

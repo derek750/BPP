@@ -1,0 +1,37 @@
+{
+  "n_profiles": 80,
+  "n_plan_rows": 5760,
+  "sampling": "gaussian_copula_direct",
+  "contents": [
+    "memorable_journey",
+    "difficult_decision",
+    "daily_life_change",
+    "meaningful_relationship",
+    "childhood_memory",
+    "turning_point"
+  ],
+  "conditions": [
+    "persona_only",
+    "liwc_only",
+    "persona_liwc",
+    "lex_fewshot"
+  ],
+  "models": [
+    "deepseek-v3",
+    "qwen3-32b",
+    "gpt-4o-mini"
+  ],
+  "n_reps": 1,
+  "rows_per_condition": {
+    "lex_fewshot": 1440,
+    "liwc_only": 1440,
+    "persona_liwc": 1440,
+    "persona_only": 1440
+  },
+  "rows_per_model": {
+    "deepseek-v3": 1920,
+    "gpt-4o-mini": 1920,
+    "qwen3-32b": 1920
+  },
+  "expected_total": 5760
+}

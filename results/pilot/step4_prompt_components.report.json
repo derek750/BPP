@@ -1,0 +1,18 @@
+{
+  "output": "/Users/derek/Developer/Controled Generation/optimized/results/step4_prompt_components.csv",
+  "n_profiles": 12,
+  "categories": [
+    "emo_sad",
+    "focusfuture",
+    "mental",
+    "certitude",
+    "fatigue",
+    "Affect",
+    "adverb",
+    "swear"
+  ],
+  "n_exemplars": 2,
+  "example_persona": "a Reddit commenter who tends to seek novelty, ideas, and new experiences about as much as most people, and who tends to feel anxiety, worry, or emotional ups-and-downs somewhat more than most people",
+  "example_liwc_preview": "- emo_sad: words expressing sadness or low mood; aim for higher than typical (target \u2248 0.16% of words)\n- focusfuture: words oriented toward the future (plans, will, gonna); aim for lower than typical (target \u2248 0.88% of words)\n- mental: words referring to mental states or cognition about the mind; aim for lower than typical (target \u2248 0.03% of words)\n- certitude: words expressing certainty or convic",
+  "example_fewshot_preview": "Here are excerpts from writers with a closely matching linguistic profile. Match their voice, tone, and word choice \u2014 not their topics:\n\nExample 1: \"They need to do it like in football, Champions league, and world cup. Where amount of teams from the region based on results from the teams. Every region still gets some amount of teams but proportion is based on their result in previous tournament(s)"
+}

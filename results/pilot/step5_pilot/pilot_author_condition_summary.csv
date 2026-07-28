@@ -1,0 +1,5 @@
+steering_condition,n_authors,mean_standardized_mae,mean_category_rho,mean_category_slope
+lex_fewshot,12,2.9377,0.5727,3.2718
+liwc_only,12,3.1262,0.4932,2.4209
+persona_liwc,12,3.1408,0.5458,2.7204
+persona_only,12,1.5052,-0.1992,-0.531

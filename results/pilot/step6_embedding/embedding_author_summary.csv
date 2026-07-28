@@ -1,0 +1,9 @@
+steering_condition,trait,n_authors,rho,calibration_slope,mae
+lex_fewshot,O,12,-0.0981,-0.0273,21.0754
+lex_fewshot,N,12,0.3292,0.0525,27.7171
+liwc_only,O,12,0.1751,0.1004,18.2931
+liwc_only,N,12,0.2382,0.0173,29.5297
+persona_liwc,O,12,0.2487,0.0802,19.041
+persona_liwc,N,12,-0.1716,-0.022,29.8169
+persona_only,O,12,0.5534,0.1102,18.9221
+persona_only,N,12,0.4378,0.0462,28.1618
