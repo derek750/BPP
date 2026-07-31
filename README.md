@@ -1,12 +1,8 @@
-# Optimized Continuous BFI–LIWC Pipeline
+# Continuous BFI–LIWC Personality Steering
 
-Continuous Openness / Neuroticism personality-conditioned generation: author-level
-LIWC targets, Gaussian-copula synthetic authors, matched steering conditions, and
-multi-level validation (LIWC alignment, embedding recovery, essay-only BFI-44).
+Pipeline for **continuous** Openness / Neuroticism personality-conditioned LLM generation: author-level LIWC targets, Gaussian-copula synthetic authors, matched steering conditions, and multi-level validation (LIWC alignment, embedding recovery, essay-only BFI-44).
 
-Discrete 9-cell / tertile balancing is archived under `../old_pipeline/`. The active
-full grid samples synthetic authors **directly from the Gaussian copula** (no cell
-quotas). Paper metrics do **not** include 9-cell Cell CV or Self-ID leakage.
+Synthetic authors are sampled **directly from a Gaussian copula** (fixed seed; QC reject-and-replace only). Primary paper metrics are continuous: LIWC MAE / ρ / β, embedding ρ_O / ρ_N, and essay-only BFI recovery.
 
 ## Layout
 
@@ -14,13 +10,11 @@ quotas). Paper metrics do **not** include 9-cell Cell CV or Self-ID leakage.
 |------|----------|
 | `common.py` | Shared constants / helpers |
 | `liwc_author_level.py` | Concat essays → re-LIWC (Validation 1 primary) |
-| `steps/` | Step scripts (`step1` … `step8`, embedding recovery viz) |
+| `steps/` | Step scripts (`step1` … `step9`, embedding viz) |
 | `runners/` | Orchestrators (`run_pilot`, `run_full`, `prepare_full`, `package_final_dataset`) |
 | `results/pilot/` | Pilot outputs (steps 1–5 + embedding probe) |
 | `results/full/` | Full multi-model outputs (generations, tables, embedding, BFI) |
 | `results/final_dataset/` | FAIR release package (profiles, generations, validation, code) |
-
-Legacy Stage-1/2 inputs live under `../old_pipeline/` (scripts, LIWC CSVs, PANDORA tables).
 
 ## Conditions
 
@@ -40,22 +34,22 @@ From repo root (venv active):
 
 ```bash
 # End-to-end dry run (no API / no LIWC app)
-python optimized/runners/run_pilot.py --mock
+python runners/run_pilot.py --mock
 
 # Smaller smoke test
-python optimized/runners/run_pilot.py --mock --n-synthetic 8 --limit 24
+python runners/run_pilot.py --mock --n-synthetic 8 --limit 24
 
 # Real DeepSeek + LIWC-22-cli
-python optimized/runners/run_pilot.py
+python runners/run_pilot.py
 
 # Add / re-run only lex_fewshot, keep prior conditions
-python optimized/steps/step3_generation_plan.py
-python optimized/steps/step4_prompt_components.py --rebuild-exemplars
-python optimized/steps/step5_pilot_generation.py --conditions lex_fewshot --merge-existing
+python steps/step3_generation_plan.py
+python steps/step4_prompt_components.py --rebuild-exemplars
+python steps/step5_pilot_generation.py --conditions lex_fewshot --merge-existing
 
 # Embedding O/N recovery (mpnet-personality) — Validation 2 primary
-python optimized/steps/step6_embedding_probe.py
-python optimized/steps/step6_embedding_recovery_viz.py
+python steps/step6_embedding_probe.py
+python steps/step6_embedding_recovery_viz.py
 ```
 
 Requires `DEEPSEEK_API_KEY` in `.env` for non-mock generation, and the LIWC-22
@@ -67,10 +61,10 @@ Default grid after `prepare_full.py`:
 **80 profiles × 6 narrative topics × 4 conditions × 3 models = 5,760**
 
 ```bash
-python optimized/runners/prepare_full.py          # direct Gaussian sample (n=80); no cell quotas
-python optimized/runners/run_full.py --skip-prepare --workers 6
+python runners/prepare_full.py
+python runners/run_full.py --skip-prepare --workers 6
 # or one-shot:
-python optimized/runners/run_full.py --workers 6
+python runners/run_full.py --workers 6
 ```
 
 Outputs:
@@ -93,16 +87,14 @@ $\beta_{\mathrm{LIWC}}$, emb.\ $\rho_O$/$\rho_N$.
 Rebuild with:
 
 ```bash
-python optimized/runners/build_paper_table.py
+python runners/build_paper_table.py
 # refresh LIWC ρ after Fisher-z change (no LIWC CLI):
-python optimized/steps/step6_full_generation.py --resummarize-author-only
+python steps/step6_full_generation.py --resummarize-author-only
 # profile-clustered bootstrap (default 2000 draws):
-python optimized/steps/step9_profile_bootstrap.py
+python steps/step9_profile_bootstrap.py
 ```
 
-Self-ID leakage, 9-cell Cell CV, and Avg composites are **not** paper metrics.
-
-### BFI-44 validation (essay-only rater; RA plan Validation 3)
+### BFI-44 validation (essay-only rater; Validation 3)
 
 Independent BFI-based evaluator rates each generated essay. The evaluator
 sees **only the essay text** + BFI-44 questionnaire — not target O/N,
@@ -111,20 +103,18 @@ steering condition, LIWC targets, or the generation prompt. Default grid:
 Primary summary: mean BFI over topics within profile×condition×model, then Spearman ρ.
 
 ```bash
-python optimized/steps/step8_bfi_validation.py --workers 6
+python steps/step8_bfi_validation.py --workers 6
 # smoke:
-python optimized/steps/step8_bfi_validation.py --mock --limit 12
+python steps/step8_bfi_validation.py --mock --limit 12
 # force full rescore:
-python optimized/steps/step8_bfi_validation.py --force --workers 6
+python steps/step8_bfi_validation.py --force --workers 6
 ```
 
 Outputs under `results/full/bfi/` (`bfi_per_sample.csv`, `bfi_summary.csv`,
 `bfi_author_summary.csv`, `bfi.report.json`).
 Primary metrics: $\mathrm{MAE}_{\mathrm{BFI}}$, $\rho_O$/$\rho_N$, $\beta_{\mathrm{BFI}}$.
-Older role-self-report (PersonaLLM-style) outputs are archived under
-`results/full/bfi_role_self_report/`.
 
-### Continuous-run tradeoff (author-level)
+### Author-level tradeoff
 
 Author-level tradeoff holds on all three models: persona wins MAE with ~null ρ;
 LIWC methods track (higher $\rho_{\mathrm{LIWC}}$) but overshoot ($\beta{>}1$) and raise MAE.
@@ -143,7 +133,7 @@ Build a self-contained reproducibility archive (profiles, paired generations,
 author-level LIWC, embedding/BFI tables, code, schema):
 
 ```bash
-python optimized/runners/package_final_dataset.py --zip
+python runners/package_final_dataset.py --zip
 ```
 
 Writes `results/final_dataset/` and `results/final_dataset.zip`
@@ -155,6 +145,4 @@ after a DOI is minted. LIWC-22 is not redistributed.
 - Copula uses Gaussian-rank transforms + empirical quantile matching (no extra
   packages beyond numpy/scipy/pandas).
 - Continuous-run LIWC prompts are **hybrid** (relative + numeric %).
-- Lexical-signature / cell-gap / 9-cell classification metrics are intentionally
-  out of scope for the paper.
 - Rare LIWC categories remain sparse; QC clips rates to [0, 100].
