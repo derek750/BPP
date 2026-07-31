@@ -38,7 +38,7 @@ CONDITION_LABELS = {
     "persona_only": "Persona",
     "liwc_only": "LIWC",
     "persona_liwc": "Persona+LIWC",
-    "lex_fewshot": "LIWC+Few-shot",
+    "lex_fewshot": "LIWC+Fewshot",
 }
 
 

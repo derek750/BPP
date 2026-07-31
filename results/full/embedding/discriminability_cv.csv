@@ -1,0 +1,17 @@
+steering_condition,representation,cv_accuracy,n,cv
+persona_only,Emb 768-d,0.3020833333333333,1440,stratified_group_profile
+persona_only,O/N axes,0.13680555555555557,1440,stratified_group_profile
+persona_only,PCA-2,0.1326388888888889,1440,stratified_group_profile
+persona_only,LDA-2,0.6576388888888889,1440,stratified_group_profile
+liwc_only,Emb 768-d,0.15555555555555556,1440,stratified_group_profile
+liwc_only,O/N axes,0.15208333333333332,1440,stratified_group_profile
+liwc_only,PCA-2,0.11458333333333333,1440,stratified_group_profile
+liwc_only,LDA-2,0.46458333333333335,1440,stratified_group_profile
+persona_liwc,Emb 768-d,0.2659722222222222,1440,stratified_group_profile
+persona_liwc,O/N axes,0.1423611111111111,1440,stratified_group_profile
+persona_liwc,PCA-2,0.1638888888888889,1440,stratified_group_profile
+persona_liwc,LDA-2,0.5847222222222223,1440,stratified_group_profile
+lex_fewshot,Emb 768-d,0.11597222222222223,1440,stratified_group_profile
+lex_fewshot,O/N axes,0.1451388888888889,1440,stratified_group_profile
+lex_fewshot,PCA-2,0.13194444444444445,1440,stratified_group_profile
+lex_fewshot,LDA-2,0.4777777777777778,1440,stratified_group_profile

@@ -6,7 +6,7 @@ LDA shows structure that predicted-O/N and PCA hide.
 
   - Top: supervised LDA-2 of mpnet-personality embeddings by strategy
   - Bottom-left: unsupervised PCA contrast
-  - Bottom-right: 5-fold CV accuracy by representation × strategy
+  - Bottom-right: 5-fold profile-grouped CV accuracy by representation × strategy
 
 Example:
   python optimized/step6_embedding_discriminability_viz.py \\
@@ -35,7 +35,7 @@ from scipy import stats
 from sklearn.decomposition import PCA
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import StratifiedKFold, cross_val_predict
+from sklearn.model_selection import StratifiedGroupKFold, cross_val_predict
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -44,6 +44,7 @@ from step6_embedding_viz import (
     CELL_COLORS,
     CELL_ORDER,
     cell_legend_handles,
+    ensure_cells,
     ordered_conditions,
     point_size,
     scatter_pca,
@@ -52,6 +53,17 @@ from step6_embedding_viz import (
 DEFAULT_OUTPUT_DIR = FULL_RESULTS_DIR / "embedding"
 DEFAULT_GENERATIONS = FULL_RESULTS_DIR / "generations" / "full_generations.csv"
 CONDITION_ORDER_SHORT = list(STEERING_CONDITIONS)
+# Paper table / caption labels (internal keys stay snake_case in data).
+CONDITION_LABELS = {
+    "persona_only": "Persona",
+    "liwc_only": "LIWC-only",
+    "persona_liwc": "Persona+LIWC",
+    "lex_fewshot": "LIWC+Fewshot",
+}
+
+
+def condition_label(cond: str) -> str:
+    return CONDITION_LABELS.get(cond, cond)
 
 
 def parse_args() -> argparse.Namespace:
@@ -71,13 +83,26 @@ def _resolve(path: Path) -> Path:
     return (OPTIMIZED_DIR / path).resolve()
 
 
-def cv_accuracy(X: np.ndarray, y: np.ndarray, *, seed: int, n_splits: int = 5) -> float:
+def cv_accuracy(
+    X: np.ndarray,
+    y: np.ndarray,
+    groups: np.ndarray,
+    *,
+    seed: int,
+    n_splits: int = 5,
+) -> float:
+    """Nine-way accuracy with folds blocked on ``groups`` (profile_id).
+
+    Texts from the same synthetic profile never appear in both train and test.
+    ``seed`` is retained for classifier reproducibility; fold assignment is
+    determined by ``StratifiedGroupKFold`` + the group labels.
+    """
     pipe = make_pipeline(
         StandardScaler(),
         LogisticRegression(max_iter=4000, random_state=seed),
     )
-    cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=seed)
-    preds = cross_val_predict(pipe, X, y, cv=cv)
+    cv = StratifiedGroupKFold(n_splits=n_splits)
+    preds = cross_val_predict(pipe, X, y, cv=cv, groups=groups)
     return float(np.mean(preds == y))
 
 
@@ -141,7 +166,8 @@ def main() -> None:
             f"Row mismatch: gens={len(gens)} scored={len(scored)} emb={len(gen_emb)}"
         )
 
-    if "cell" not in scored.columns or scored["cell"].isna().all():
+    scored, cell_legend_title = ensure_cells(scored)
+    if scored["cell"].isna().all():
         raise SystemExit("per-sample table needs a cell column for discriminability.")
 
     liwc_cols = [c for c in gens.columns if c.startswith("obs_")]
@@ -152,7 +178,13 @@ def main() -> None:
     cells += sorted(set(scored["cell"]) - set(cells))
     conditions = ordered_conditions(scored)
     y = scored["cell"].astype(str).to_numpy()
+    profile_groups = scored["profile_id"].astype(str).to_numpy()
     chance = 1.0 / len(cells)
+    print(f"Cell labels: {cell_legend_title} ({len(cells)} cells)")
+    print(
+        "CV: StratifiedGroupKFold by profile_id "
+        f"({pd.Series(profile_groups).nunique()} profiles)"
+    )
 
     # O/N axes: prefer human high−low axes; fall back to probe predictions.
     if human_path.exists():
@@ -169,6 +201,12 @@ def main() -> None:
         on_label = "Pred O/N"
 
     X_liwc = gens[liwc_cols].to_numpy(dtype=float)
+    has_liwc = bool(np.isfinite(X_liwc).all())
+    if not has_liwc:
+        print(
+            "Skipping LIWC (8-d) CV: incomplete obs_* columns "
+            f"(finite fraction={float(np.isfinite(X_liwc).mean()):.1%})."
+        )
 
     rows: list[dict[str, object]] = []
     for cond in conditions:
@@ -177,20 +215,24 @@ def main() -> None:
         emb_c = gen_emb[mask]
         pca_c = PCA(n_components=2, random_state=args.seed).fit_transform(emb_c)
         lda_c = lda_xy(emb_c, y_c)
-        for name, X in (
-            ("LIWC (8-d)", X_liwc[mask]),
+        reps: list[tuple[str, np.ndarray]] = [
             ("Emb 768-d", emb_c),
             (on_label, X_on[mask]),
             ("PCA-2", pca_c),
             ("LDA-2", lda_c),
-        ):
-            acc = cv_accuracy(X, y_c, seed=args.seed)
+        ]
+        if has_liwc:
+            reps.insert(0, ("LIWC (8-d)", X_liwc[mask]))
+        groups_c = profile_groups[mask]
+        for name, X in reps:
+            acc = cv_accuracy(X, y_c, groups_c, seed=args.seed)
             rows.append(
                 {
                     "steering_condition": cond,
                     "representation": name,
                     "cv_accuracy": acc,
                     "n": int(mask.sum()),
+                    "cv": "stratified_group_profile",
                 }
             )
     acc_df = pd.DataFrame(rows)
@@ -219,7 +261,7 @@ def main() -> None:
                 "cv_accuracy",
             ].iloc[0]
         )
-        ax.set_title(f"{cond}\n768-d CV acc={sub_acc:.0%}", fontsize=10)
+        ax.set_title(f"{condition_label(cond)}\n768-d CV acc={sub_acc:.0%}", fontsize=10)
         ax.set_xlabel("LD1", fontsize=8)
         if i == 0:
             ax.set_ylabel("LD2", fontsize=8)
@@ -242,14 +284,19 @@ def main() -> None:
         ].iloc[0]
     )
     ax_pca.set_title(
-        f"PCA contrast ({contrast_cond})\nPCA-2 CV acc={pca_acc:.0%}",
+        f"PCA contrast ({condition_label(contrast_cond)})\nPCA-2 CV acc={pca_acc:.0%}",
         fontsize=9,
     )
     ax_pca.set_xlabel("PC1", fontsize=8)
     ax_pca.set_ylabel("PC2", fontsize=8)
 
     ax_bar = fig.add_subplot(gs[1, 1:])
-    reps = ["LIWC (8-d)", "Emb 768-d", on_label, "PCA-2", "LDA-2"]
+    reps = (["LIWC (8-d)"] if has_liwc else []) + [
+        "Emb 768-d",
+        on_label,
+        "PCA-2",
+        "LDA-2",
+    ]
     plot_conds = [c for c in CONDITION_ORDER_SHORT if c in conditions] or conditions
     x = np.arange(len(reps))
     width = 0.8 / max(len(plot_conds), 1)
@@ -259,26 +306,26 @@ def main() -> None:
             float(
                 acc_df.loc[
                     (acc_df["steering_condition"] == cond)
-                    & (acc_df["representation"] == r),
+                    & (acc_df["representation"] == rep),
                     "cv_accuracy",
                 ].iloc[0]
             )
-            for r in reps
+            for rep in reps
         ]
         ax_bar.bar(
             x + j * width - 0.4 + width / 2,
             vals,
-            width=width * 0.9,
-            label=cond,
+            width=width,
+            label=condition_label(cond),
             color=palette[j % len(palette)],
         )
     ax_bar.axhline(chance, color="#666", ls="--", lw=1, label=f"chance ({chance:.0%})")
     ax_bar.set_xticks(x)
     ax_bar.set_xticklabels(reps, rotation=15, ha="right", fontsize=8)
-    ax_bar.set_ylabel("5-fold CV accuracy", fontsize=9)
+    ax_bar.set_ylabel("5-fold profile-grouped CV accuracy", fontsize=9)
     ax_bar.set_ylim(0, max(0.75, float(acc_df["cv_accuracy"].max()) + 0.08))
     ax_bar.set_title(
-        "Cell classification by representation (same labels, held-out CV)",
+        "Cell classification by representation (profile-grouped CV)",
         fontsize=9,
     )
     ax_bar.legend(frameon=False, fontsize=7, loc="upper right")
@@ -328,7 +375,11 @@ def main() -> None:
                 "cv_accuracy",
             ].iloc[0]
         )
-        ax.set_title(f"{cond}  ·  768-d CV={sub_acc:.0%}", fontsize=8.5, pad=2)
+        ax.set_title(
+            f"{condition_label(cond)}  ·  768-d CV={sub_acc:.0%}",
+            fontsize=8.5,
+            pad=2,
+        )
         ax.set_xlabel("LD1", fontsize=7)
         ax.set_ylabel("LD2", fontsize=7)
         ax.tick_params(labelsize=6.5)
@@ -377,7 +428,11 @@ def main() -> None:
                 "cv_accuracy",
             ].iloc[0]
         )
-        ax.set_title(f"{cond}  ·  CV={sub_acc:.0%}", fontsize=9.5, pad=3)
+        ax.set_title(
+            f"{condition_label(cond)}  ·  CV={sub_acc:.0%}",
+            fontsize=9.5,
+            pad=3,
+        )
         ax.set_xlabel("LD1", fontsize=8)
         ax.set_ylabel("LD2", fontsize=8)
         ax.tick_params(labelsize=7)

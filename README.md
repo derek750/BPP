@@ -27,7 +27,7 @@ Legacy Stage-1/2 inputs live under `../old_pipeline/` (scripts, LIWC CSVs, PANDO
 1. `persona_only` — continuous O/N description only
 2. `liwc_only` — author-specific LIWC targets only (hybrid relative + numeric %)
 3. `persona_liwc` — both
-4. `lex_fewshot` — LIWC targets + nearest-neighbor human excerpts
+4. `lex_fewshot` — LIWC targets + nearest-neighbor human excerpts (paper label: **LIWC+Fewshot**)
 
 ## Default pilot grid
 

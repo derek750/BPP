@@ -6,8 +6,7 @@ comprising:
 
   - human and synthetic author profiles (continuous O/N + LIWC targets)
   - paired generation–measurement records (full multi-model grid)
-  - author-level LIWC alignment, embedding recovery, essay-only BFI-44,
-    and secondary 9-cell classification summaries
+  - author-level LIWC alignment, continuous embedding recovery, essay-only BFI-44
   - reproduction code, schema documentation, and worked examples
 
 FAIR mapping (Wilkinson et al., 2016):
@@ -50,7 +49,7 @@ from common import (  # noqa: E402
 )
 
 DEFAULT_OUTPUT = RESULTS_DIR / "final_dataset"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 
 CONTENT_TO_CP = {
     "memorable_journey": "CP1",
@@ -68,6 +67,7 @@ CODE_FILES = [
     "runners/prepare_full.py",
     "runners/run_pilot.py",
     "runners/run_full.py",
+    "runners/build_paper_table.py",
     "runners/package_final_dataset.py",
     "steps/step1_author_profiles.py",
     "steps/step2_gaussian_copula.py",
@@ -78,8 +78,9 @@ CODE_FILES = [
     "steps/step6_embedding_probe.py",
     "steps/step6_embedding_viz.py",
     "steps/step6_embedding_discriminability_viz.py",
-    "steps/step7_classification.py",
+    "steps/step6_embedding_recovery_viz.py",
     "steps/step8_bfi_validation.py",
+    "steps/step9_profile_bootstrap.py",
 ]
 
 
@@ -345,6 +346,30 @@ def build_synthetic_profile_records(
     return records
 
 
+def _relativize_path_value(value: str, release_subdir: str) -> str:
+    """Rewrite absolute/local paths to release-relative basenames."""
+    name = Path(value).name
+    if not name:
+        return value
+    return f"{release_subdir}/{name}"
+
+
+def _copy_json_relativize_paths(
+    src: Path, dest: Path, *, release_subdir: str
+) -> None:
+    """Copy a JSON report, replacing absolute filesystem paths with release paths."""
+    payload = json.loads(src.read_text(encoding="utf-8"))
+    outputs = payload.get("outputs")
+    if isinstance(outputs, dict):
+        payload["outputs"] = {
+            key: _relativize_path_value(str(val), release_subdir)
+            if isinstance(val, str) and ("/" in val or "\\" in val)
+            else val
+            for key, val in outputs.items()
+        }
+    dest.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+
 def copy_code(out: Path) -> list[str]:
     code_root = out / "code" / "optimized"
     copied: list[str] = []
@@ -369,8 +394,11 @@ def make_zip(out: Path) -> Path:
         zip_path.unlink()
     with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(out.rglob("*")):
-            if path.is_file():
-                archive.write(path, arcname=str(Path(out.name) / path.relative_to(out)))
+            if not path.is_file():
+                continue
+            if any(part == ".git" for part in path.parts):
+                continue
+            archive.write(path, arcname=str(Path(out.name) / path.relative_to(out)))
     return zip_path
 
 
@@ -408,82 +436,102 @@ def write_docs(out: Path, meta: dict) -> None:
 
     readme = f"""# Continuous BFI–LIWC Controlled Personality Text Dataset
 
-Self-contained reproducibility artifact for the **continuous Openness / Neuroticism**
-personality-conditioned generation pipeline.
+Anonymous code-and-data supplement for continuous Openness / Neuroticism
+personality-conditioned generation. This archive contains the profiles, full
+generation grid, validation tables, figures, and reproduction scripts used in
+the paper.
 
-The release comprises the reference profile library (human + Gaussian-copula synthetic
-authors), the paired generation–measurement records, and all supporting documentation,
-code, and metadata required to reproduce the reported results. It follows the
-[FAIR principles](https://doi.org/10.1038/sdata.2016.18) for research data
-(Wilkinson et al., 2016): findability through registration on a persistent archive
-(Zenodo or similar), accessibility through open-license distribution (CC BY 4.0 for
-data, MIT for code), interoperability through standardized formats (Parquet, JSON,
-JSONL, CSV), and reusability through complete schema documentation and worked examples.
+Synthetic authors are sampled from a Gaussian copula over continuous trait and
+LIWC targets (no tertile / 9-cell quotas). Paper metrics are continuous only.
+
+## What is included
+
+- **Generated data**: all {meta['n_paired']} essays (`generated_text` + prompts) with
+  targets, measured LIWC, and fidelity metrics
+- **Human profiles**: {meta['n_human']} author-level records derived from PANDORA
+  (continuous O/N + eight LIWC rates; no raw Reddit dump)
+- **Synthetic profiles**: {meta['n_synthetic']} Gaussian-copula authors used in the grid
+- **Validation**: author-level LIWC alignment, embedding probe recovery, essay-only
+  BFI-44 scores and summaries
+- **Code**: pipeline scripts under `code/optimized/` (MIT)
+
+## What is not included
+
+- Raw PANDORA comment / essay corpus (only derived profiles + short few-shot excerpts)
+- LIWC-22 dictionary (commercial; category rates in the tables were scored with it)
+- API keys / `.env` files (regeneration against live model APIs requires your own keys)
+
+## Design (as executed)
+
+- **{meta['n_synthetic']} synthetic authors** × **{meta['n_topics']} topics** ×
+  **{meta['n_conditions']} conditions** × **{meta['n_models']} models** =
+  **{meta['n_paired']}** generations
+- Topics: {", ".join(meta['contents'])}
+- Conditions: {", ".join(meta['conditions'])}
+- Models: {", ".join(meta['models'])}
+- Control-target LIWC categories: `{meta['categories']}`
+
+### Validation layers
+
+1. **LIWC profile alignment** — concat topics per author–condition–model, re-score LIWC (primary); essay-level secondary
+2. **Embedding signal recovery** — Ridge probe on `mpnet-personality`, trained on human windows only
+3. **BFI score consistency** — independent essay-only BFI-44 rater; primary metrics are author-level means then Spearman ρ
 
 ## Contents
 
 | Path | Description |
 |------|-------------|
 | `data/profiles/human_author_profiles.*` | {meta['n_human']} human author profiles (continuous O/N + 8 LIWC rates) |
-| `data/profiles/synthetic_author_profiles.*` | {meta['n_synthetic']} tertile-balanced synthetic authors used in the full grid |
+| `data/profiles/synthetic_author_profiles.*` | {meta['n_synthetic']} Gaussian-copula synthetic authors |
 | `data/profiles/prompt_components.csv` | Separable persona / LIWC / few-shot prompt blocks |
 | `data/profiles/fewshot_exemplars.json` | Nearest-neighbor human excerpts for `lex_fewshot` |
 | `data/generations/paired_generations.*` | {meta['n_paired']} essay-level generation–measurement records |
 | `data/generations/author_level_liwc.*` | Primary Validation 1: concat topics → re-scored LIWC |
 | `data/generations/*_summary.csv` | Author-level (primary) and essay-level (secondary) aggregates |
 | `data/validation/bfi_*` | Essay-only BFI-44 (Validation 3; {meta['n_bfi']} scored essays) |
-| `data/validation/embedding_*` | Embedding probe recovery (Validation 2) |
-| `data/validation/classification_*` | Secondary 9-cell LIWC CV |
+| `data/validation/embedding_*` | Continuous embedding probe recovery (Validation 2) |
+| `data/validation/discriminability_cv.csv` | Nine-way cell CV accuracies for the LDA figure |
 | `data/validation/paper_results_table.csv` | Main results table used in the paper |
-| `data/figures/` | Key embedding / results figures |
-| `code/optimized/` | Reproduction scripts (MIT) |
+| `data/figures/` | Paper embedding LDA / recovery figures and diagnostics |
+| `code/optimized/` | Reproduction scripts |
+| `code/requirements.txt` | Python dependencies |
 | `examples/load_example.py` | Worked loading example |
 | `SCHEMA.md` | Field-level schema |
 | `datapackage.json` | Frictionless Data Package descriptor |
-| `CITATION.cff` | Citation metadata |
+| `CITATION.cff` | Citation metadata (anonymous for review) |
 | `metadata/release_manifest.json` | Build provenance |
 
-## Design (as executed)
+Field definitions: see `SCHEMA.md`.
 
-- **{meta['n_synthetic']} synthetic authors** with continuous O/N and author-specific LIWC targets
-- **{meta['n_topics']} autobiographical topics**: {", ".join(meta['contents'])}
-- **{meta['n_conditions']} steering conditions**: {", ".join(meta['conditions'])}
-- **{meta['n_models']} models**: {", ".join(meta['models'])}
-- Full grid: **{meta['n_paired']}** generations ({meta['n_synthetic']} × {meta['n_topics']} × {meta['n_conditions']} × {meta['n_models']})
-- Control-target LIWC categories: `{meta['categories']}`
+## Quick start
 
-### Validation layers
+```bash
+pip install -r code/requirements.txt
+python examples/load_example.py
+```
 
-1. **LIWC Profile Alignment** — author-level concat → re-LIWC (primary); essay-level secondary
-2. **Embedding Signal Recovery** — Ridge probe on `mpnet-personality`, trained on human windows only
-3. **BFI Score Consistency** — independent essay-only BFI-44 rater (sees only the essay text)
+Inspect paper aggregates without regenerating:
+
+```bash
+# author × condition × model LIWC summary (primary Validation 1)
+# data/generations/author_condition_model_summary.csv
+
+# main paper table
+# data/validation/paper_results_table.csv
+```
+
+Full regeneration (optional) needs LIWC-22, model API access, and the steps under
+`code/optimized/`; see `code/optimized/README.md`.
 
 ## Licenses
 
 - **Data**: CC BY 4.0 (`LICENSE-DATA.txt`)
 - **Code**: MIT (`LICENSE-CODE.txt`)
 
-LIWC-22 is a commercial dictionary and is **not** redistributed. Category percentages
-in this release were produced with LIWC-22; redistributors must obtain their own LIWC
-license to re-score text.
-
-## Quick start
-
-```bash
-python examples/load_example.py
-```
-
-## Zenodo deposit (manual)
-
-1. Create a new Zenodo upload.
-2. Upload `final_dataset.zip` (or the folder contents).
-3. Set license metadata: data CC-BY-4.0, software MIT.
-4. Paste `CITATION.cff` / README abstract into the description.
-5. Reserve a DOI and update `CITATION.cff` / `datapackage.json` with the DOI.
-
 ## Citation
 
-See `CITATION.cff`. After a DOI is minted, prefer citing the archived Zenodo version.
+See `CITATION.cff` (anonymous authors for double-blind review). A public archive
+DOI may be added after acceptance.
 """
     (out / "README.md").write_text(readme, encoding="utf-8")
 
@@ -495,7 +543,7 @@ See `CITATION.cff`. After a DOI is minted, prefer citing the archived Zenodo ver
 |-------|------|-------------|
 | `author_id` | string | PANDORA author identifier |
 | `openness` / `neuroticism` | float | Continuous BFI scores (0–100 scale) |
-| `cell` | string | Tertile O×N cell label (diagnostic only) |
+| `cell` | string | Optional legacy tertile label (diagnostic only; not used for sampling) |
 | `n_essays` / `n_words` | int | Author essay metadata |
 | `liwc_profile` | object | Category → LIWC-22 rate (%) |
 
@@ -505,7 +553,6 @@ See `CITATION.cff`. After a DOI is minted, prefer citing the archived Zenodo ver
 |-------|------|-------------|
 | `profile_id` | string | Synthetic author id |
 | `target_O` / `target_N` | float | Continuous personality targets |
-| `cell` | string | Tertile label used for balanced sampling |
 | `liwc_target_profile` | object | Category → target LIWC-22 rate (%) |
 
 ## Generations — `paired_generations.jsonl` (one object per essay)
@@ -534,16 +581,18 @@ One row per `profile_id` × `steering_condition` × `model`. Observed LIWC rates
 **concatenating all topic essays** for that author–condition–model and re-scoring LIWC
 once (primary Validation 1 metric).
 
-## Validation — BFI (`bfi_per_sample.parquet`)
+## Validation — BFI (`bfi_per_sample.parquet`, `bfi_author_summary.csv`)
 
-Essay-only BFI-44 protocol (`essay_only_rater_v1`): the rater sees only the essay text.
-Trait composites are on the PANDORA 0–100 scale: items answered 1–5, mapped via
-`(mean − 1) / 4 × 100`. Primary metrics are Spearman ρ(`target_O`, `bfi_O`) and
-ρ(`target_N`, `bfi_N`). Raw rater prompts/responses are omitted from the release.
+Essay-only BFI-44 protocol (`essay_only_rater_v1`): the rater sees only the essay text
+for all six topics. Trait composites are on the PANDORA 0–100 scale: items answered
+1–5, mapped via `(mean − 1) / 4 × 100`. Primary metrics average BFI over topics per
+author then compute Spearman ρ(`target_O`, mean `bfi_O`) / ρ(`target_N`, mean `bfi_N`).
+Raw rater prompts/responses are omitted from the release.
 
 ## Validation — Embedding
 
 `embedding_per_sample.csv` stores probe predictions for each generation.
+`embedding_author_summary.csv` stores author-level ρ_O / ρ_N (primary).
 `personality_embeddings.npz` stores raw `mpnet-personality` vectors when included.
 The Ridge probes were trained only on human windows (no generation leakage).
 
@@ -568,8 +617,7 @@ date-released: "{meta['date']}"
 license: CC-BY-4.0
 type: dataset
 authors:
-  - family-names: Lau
-    given-names: Derek
+  - name: "Anonymous Authors"
 abstract: >
   A FAIR synthetic-text dataset for personality-conditioned generation with continuous
   Openness and Neuroticism targets, author-specific LIWC-22 control profiles, matched
@@ -777,6 +825,12 @@ def main() -> None:
 
     # --- Validation ---
     shutil.copy2(bfi_summary_path, out / "data/validation/bfi_summary.csv")
+    bfi_author = FULL_RESULTS_DIR / "bfi" / "bfi_author_summary.csv"
+    if bfi_author.exists():
+        shutil.copy2(bfi_author, out / "data/validation/bfi_author_summary.csv")
+    bfi_report = FULL_RESULTS_DIR / "bfi" / "bfi.report.json"
+    if bfi_report.exists():
+        shutil.copy2(bfi_report, out / "data/validation/bfi.report.json")
     bfi = pd.read_csv(bfi_per_path)
     drop_cols = [c for c in ("bfi_prompt", "bfi_raw") if c in bfi.columns]
     bfi_release = bfi.drop(columns=drop_cols)
@@ -790,26 +844,20 @@ def main() -> None:
         "embedding_condition_model_summary.csv",
         "embedding_author_level.csv",
         "embedding_author_summary.csv",
-        "discriminability_cv.csv",
         "embedding_probe.report.json",
         "human_windows.csv",
     ):
         src = emb_dir / name
-        if src.exists():
-            shutil.copy2(src, out / "data/validation" / name)
+        if not src.exists():
+            continue
+        dest = out / "data/validation" / name
+        if name.endswith(".report.json"):
+            _copy_json_relativize_paths(src, dest, release_subdir="data/validation")
+        else:
+            shutil.copy2(src, dest)
     npz = emb_dir / "personality_embeddings.npz"
     if npz.exists() and not args.skip_embeddings_npz:
         shutil.copy2(npz, out / "data/validation/personality_embeddings.npz")
-
-    cls_dir = args.classification_dir
-    for name in (
-        "classification_cv_summary.csv",
-        "classification.report.json",
-        "classification_cv_by_model.png",
-    ):
-        src = cls_dir / name
-        if src.exists():
-            shutil.copy2(src, out / "data/validation" / name)
 
     tables_dir = args.tables_dir
     for name in (
@@ -826,22 +874,33 @@ def main() -> None:
             )
             shutil.copy2(src, out / "data/validation" / dest_name)
 
-    # --- Figures ---
+    # --- Figures / embedding diagnostics ---
     for name in (
-        "personality_embedding_viz_discriminability.png",
+        "fig_embedding_recovery.png",
         "personality_embedding_viz_lda_row.png",
-        "personality_embedding_viz_pca_by_strategy.png",
-        "personality_embedding_viz.png",
-        "personality_embedding_viz_by_model.png",
+        "personality_embedding_viz_lda_vertical.png",
+        "personality_embedding_viz_discriminability.png",
+        "discriminability_cv.csv",
     ):
         src = emb_dir / name
+        if not src.exists():
+            continue
+        dest_dir = out / "data/figures" if name.endswith(".png") else out / "data/validation"
+        shutil.copy2(src, dest_dir / name)
+
+    paper_fig_dir = REPO_ROOT / "papers" / "main" / "figures"
+    paper_copies = {
+        "fig_embedding_recovery.png": "fig_embedding_recovery.png",
+        "fig_embedding_lda_row.png": "fig_embedding_lda_row.png",
+        "full_results_paper_table.png": "paper_results_table.png",
+    }
+    for src_name, dest_name in paper_copies.items():
+        src = paper_fig_dir / src_name
         if src.exists():
-            shutil.copy2(src, out / "data/figures" / name)
-    paper_fig = REPO_ROOT / "papers" / "paper" / "figures" / "fig_embedding_lda_row.png"
-    if paper_fig.exists():
-        shutil.copy2(paper_fig, out / "data/figures/fig_embedding_lda_row.png")
+            shutil.copy2(src, out / "data/figures" / dest_name)
+
     table_png = tables_dir / "full_results_paper_table.png"
-    if table_png.exists():
+    if table_png.exists() and not (out / "data/figures/paper_results_table.png").exists():
         shutil.copy2(table_png, out / "data/figures/paper_results_table.png")
 
     copied_code = copy_code(out)
